@@ -5,7 +5,7 @@ const SideBar = () => {
   return (
     <>
       <div
-        className="fixed w-[80px] h-screen p-5 z-20 flex flex-col justify-between"
+        className="fixed w-[80px] h-screen p-5 z-20 flex flex-col justify-between hidden lg:flex"
         style={{ backgroundColor: "#1a1a1a" }}
       >
         <div className="menu">
