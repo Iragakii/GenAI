@@ -20,3 +20,32 @@
 .bg-submit-input{
   background-color: #DB2777;
 }   
+.border-input-field-color{
+  border-color: #758694;
+  box-shadow: 0px 0px 13px #758694;
+}
+.f-color-ai-list{
+  background-color: #26355D;
+}
+.f-color-ai-list:hover{
+  background-color: #F1D4D4;
+  
+}
+.s-color-ai-list{
+  background-color: #4d2e4d;
+}
+.s-color-ai-list:hover{
+  background-color: #F1D4D4;
+}
+.img-color-ai-list{
+  background-color: #534335;
+}
+.img-color-ai-list:hover{
+  background-color: #F1D4D4;
+}
+.video-color-ai-list{
+  background-color: #2e3e2d;
+}
+.video-color-ai-list:hover{
+  background-color: #F1D4D4;
+}

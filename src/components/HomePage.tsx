@@ -3,6 +3,7 @@ import SideBar from "./SideBar";
 import AiHashName from "./AiHashName";
 import InputFeild from "./InputFeild";
 import BrandName from "./BrandName";
+import NewAi from "./AiList/NewAi";
 
 const HomePage: FC = () => {
   return (
@@ -15,7 +16,12 @@ const HomePage: FC = () => {
         <div className="mb-20">
           <AiHashName />
         </div>
+
         <InputFeild />
+
+        <div className="mt-10">
+          <NewAi />
+        </div>
       </div>
     </div>
   );
