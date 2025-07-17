@@ -25,21 +25,21 @@ const InputFeild = () => {
           <div className="flex items-center gap-4 mt-9 mr-2 justify-end">
             <button
               type="submit"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-white hover:text-gray-300 transition-colors cursor-pointer"
             >
               <i className="ri-attachment-2"></i>
             </button>
             <button
               type="submit"
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-white hover:text-gray-300 transition-colors cursor-pointer"
             >
               <i className="ri-mic-line"></i>
             </button>
             <button
               type="submit"
-              className="px-2 py-1 text-white bg-submit-input rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors"
+              className="flex text-white items-center justify-center leading-[40px] px-3 relative box-border rounded-[8px] group bg-submit-input hover:scale-105 transition-all duration-300 ease-in-out outline-none focus:ring-2 focus:ring-pink-400 cursor-pointer"
             >
-              <i className="ri-send-plane-line"></i>
+              <i className="ri-send-plane-line text-1xl group-hover:scale-[1.2] transition-all duration-300 ease-in-out"></i>
             </button>
           </div>
         </div>
