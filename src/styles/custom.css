@@ -11,7 +11,7 @@
 }
 .brand-home {
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-  color: #7B2CBF;
+  color: #DB2777;
   cursor: pointer;
 }
 .text-input-field {
@@ -19,4 +19,4 @@
 }
 .bg-submit-input{
   background-color: #7B2CBF;
-}
+}   

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import brandLogoMain from "../../public/brand-logo-main.png";
+import aboutUs from "../assets/icon/about-us.png";
 const SideBar = () => {
   return (
     <>
@@ -12,10 +13,14 @@ const SideBar = () => {
           <div className="mb-10">
             <Link
               to="#"
-              className="flex items-center justify-center leading-[40px] mb-1 relative"
+              className="flex items-center justify-center leading-[40px] mb-1 relative group"
             >
               <div className="icon text-[2.75rem] block text-white flex justify-center items-center">
-                <i class="ri-robot-2-line"></i>
+                <img
+                  className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
+                  src={brandLogoMain}
+                  alt="logo-company"
+                />
               </div>
             </Link>
           </div>
@@ -35,32 +40,34 @@ const SideBar = () => {
               </div>
             </div>
 
-            <div className="mb-5.5 ">
+            <div className="mb-5.5">
               <Link
                 to="#"
-                className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group "
-                style={{ backgroundColor: "#313131" }}
+                className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
               >
-                <div className="icon text-2xl block text-white flex justify-center items-center ">
-                  <i className="ri-subscript group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
+                <div className="icon text-2xl block text-white flex justify-center items-center">
+                  <i class="ri-customer-service-2-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white "></i>
                 </div>
               </Link>
               <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap">
-                New
+                Contact
               </div>
             </div>
-
             <div className="">
               <Link
                 to="#"
-                className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+                className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
               >
                 <div className="icon text-2xl block text-white flex justify-center items-center">
-                  <i class="ri-ghost-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white "></i>
+                  <img
+                    src={aboutUs}
+                    alt="logo-company"
+                    className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
+                  />
                 </div>
               </Link>
               <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap">
-                Nothing
+                About us
               </div>
             </div>
           </div>
@@ -68,7 +75,7 @@ const SideBar = () => {
         <div className="">
           <Link
             to="#"
-            className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+            className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[50px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
           >
             <div className="icon text-2xl block text-white flex justify-center items-center">
               <i class="ri-user-3-line  group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
