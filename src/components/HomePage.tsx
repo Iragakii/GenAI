@@ -10,7 +10,7 @@ const HomePage: FC = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <SideBar />
-      <div className="flex flex-col items-center justify-center h-screen w-screen relative lg:-top-30 ">
+      <div className="flex flex-col items-center justify-center h-screen w-screen relative lg:-top-10 ">
         <div className="mb-1">
           <BrandName />
         </div>
@@ -23,7 +23,7 @@ const HomePage: FC = () => {
         <div className="mt-10">
           <NewAi />
         </div>
-        <div className="mt-20">
+        <div className="mt-20 left-3 relative">
           <ComingAi />
         </div>
       </div>

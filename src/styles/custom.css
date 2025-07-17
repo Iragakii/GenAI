@@ -1,3 +1,4 @@
+
 .hover-glow {
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   color: #ffffff;
@@ -7,45 +8,247 @@
 .hover-glow:hover {
   color: #D69ADE !important;
   text-shadow: 0 0 5px #7D1C4A, 0 0 5px #7D1C4A !important;
-  
 }
+
 .brand-home {
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   color: #DB2777;
   cursor: pointer;
 }
+
+
 .text-input-field {
   color: #FFFFFF;
 }
-.bg-submit-input{
+
+.bg-submit-input {
   background-color: #DB2777;
-}   
-.border-input-field-color{
+}
+
+.border-input-field-color {
   border-color: #758694;
   box-shadow: 0px 0px 13px #758694;
 }
-.f-color-ai-list{
+
+
+.f-color-ai-list {
   background-color: #26355D;
 }
-.f-color-ai-list:hover{
+
+.f-color-ai-list:hover {
   background-color: #F1D4D4;
-  
 }
-.s-color-ai-list{
+
+.s-color-ai-list {
   background-color: #4d2e4d;
 }
-.s-color-ai-list:hover{
+
+.s-color-ai-list:hover {
   background-color: #F1D4D4;
 }
-.img-color-ai-list{
+
+.img-color-ai-list {
   background-color: #534335;
 }
-.img-color-ai-list:hover{
+
+.img-color-ai-list:hover {
   background-color: #F1D4D4;
 }
-.video-color-ai-list{
+
+.video-color-ai-list {
   background-color: #2e3e2d;
 }
-.video-color-ai-list:hover{
+
+.video-color-ai-list:hover {
   background-color: #F1D4D4;
+}
+
+
+.w-17 {
+  width: 4.25rem;
+}
+
+.h-17 {
+  height: 4.25rem;
+}
+
+
+.bg-gradient-pink-blue {
+  background: linear-gradient(180deg, #EC4899 0%, #153885 100%);
+}
+
+.bg-gradient-purple-orange {
+  background: linear-gradient(180deg, #7B2CBF 0%, #FF4F03 100%);
+}
+
+
+.icon-stack-container {
+  position: relative;
+  width: 160px;
+  height: 82px;
+  isolation: isolate; 
+}
+.right-icon-group{
+  right: -30px;
+  position: relative;
+}
+.left-icon-group{
+  left: -28px;
+  position: relative;
+}
+.stack-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  will-change: transform, z-index;
+  transform-origin: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+.stack-icon.youtube {
+  width: 58px;
+  height: 58px;
+  background: white;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+}
+
+.stack-icon.youtube:hover {
+  transform: translateX(-50%) scale(1.15);
+}
+
+
+.stack-icon.instagram {
+  width: 30px;
+  height: 30px;
+  background: #1F7D53;
+  top: 28px;
+  left: 0;
+  z-index: 300;
+}
+
+.stack-icon.twitter {
+  width: 40px;
+  height: 40px;
+  background: #27391C;
+  top: 17px;
+  left: 20px;
+  z-index: 350;
+}
+
+.stack-icon.threads {
+  width: 50px;
+  height: 50px;
+  background: #18230F;
+  top: 8px;
+  left: 50px;
+  z-index: 400;
+}
+
+
+.stack-icon.tiktok {
+  width: 50px;
+  height: 50px;
+  background: #222222;
+  top: 8px;
+  right: 50px;
+  z-index: 400;
+}
+
+.stack-icon.wordpress {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #7B2CBF 0%, #FF4F03 100%);
+  top: 17px;
+  right: 20px;
+  z-index: 350;
+}
+
+.stack-icon.word {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(180deg, #EC4899 0%, #153885 100%);
+  top: 28px;
+  right: 0;
+  z-index: 300;
+}
+
+
+.stack-icon:hover {
+  z-index: 1000 !important;
+  transform: scale(1.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.icon-group {
+  gap: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-group-spaced {
+  gap: 30px !important;
+}
+
+.icon-group-stacked {
+  gap: 0 !important;
+}
+
+
+.left-group-animate .stack-icon.instagram {
+  left: -70px; 
+}
+
+.left-group-animate .stack-icon.twitter {
+  left: -21px; 
+}
+
+.left-group-animate .stack-icon.threads {
+  left: 36px; 
+}
+
+.right-group-animate .stack-icon.tiktok {
+  right: 36px; 
+}
+
+.right-group-animate .stack-icon.wordpress {
+  right: -21px; 
+}
+
+.right-group-animate .stack-icon.word {
+  right: -70px; 
+}
+
+
+.left-group-animate {
+  transform: translateX(-30px) !important;
+}
+
+.right-group-animate {
+  transform: translateX(30px) !important;
+}
+.stack-icon {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .icon-stack-container {
+    width: 140px;
+    height: 70px;
+  }
+  
+  .stack-icon.youtube {
+    width: 48px;
+    height: 48px;
+  }
 }
