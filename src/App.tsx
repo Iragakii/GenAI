@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import HomePage from "./components/HomePage";
+import ScreenHomePageOne from "./HomePage/ScreenHomePageOne";
 
 const App: FC = () => {
   return (
     <>
-      <HomePage />
+      <ScreenHomePageOne />
     </>
   );
 };

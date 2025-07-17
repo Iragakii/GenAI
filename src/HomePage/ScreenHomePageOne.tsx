@@ -7,7 +7,7 @@ import NewAi from "./AiList/NewAi";
 import ComingAi from "./AiList/ComingAi";
 import TrendingNew from "./TrendingNew";
 
-const HomePage: FC = () => {
+const ScreenHomePageOne: FC = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <SideBar />
@@ -35,4 +35,4 @@ const HomePage: FC = () => {
   );
 };
 
-export default HomePage;
+export default ScreenHomePageOne;
