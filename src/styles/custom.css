@@ -252,3 +252,24 @@
     height: 48px;
   }
 }
+/* Custom gradient line styling */
+.trending-line {
+  width: 100px;
+  height: 1px;
+}
+
+@media (min-width: 768px) {
+  .trending-line {
+    width: 210px;
+  }
+}
+
+.trending-line path {
+  stroke: url(#gradient);
+  stroke-opacity: 0.6;
+}
+
+/* Dark mode rotation */
+.dark .trending-line {
+  transform: rotate(180deg);
+}

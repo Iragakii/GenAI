@@ -5,6 +5,7 @@ import InputFeild from "./InputFeild";
 import BrandName from "./BrandName";
 import NewAi from "./AiList/NewAi";
 import ComingAi from "./AiList/ComingAi";
+import TrendingNew from "./TrendingNew";
 
 const HomePage: FC = () => {
   return (
@@ -25,6 +26,9 @@ const HomePage: FC = () => {
         </div>
         <div className="mt-20 left-3 relative">
           <ComingAi />
+        </div>
+        <div className="mt-20 left-3 relative">
+          <TrendingNew />
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         "custom-purple": "#D69ADE",
+        "gradient-start": "#EC4899",
+        "gradient-end": "#153885",
       },
       textShadow: {
         glow: "0 0 8px #FFDFEF",
