@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+:root {
+  --my-font-weight: 500;
+}
 body {
-  background-color: #1a1b1c;
+  background-color: #000000;
 }

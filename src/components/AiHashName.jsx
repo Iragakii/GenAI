@@ -10,14 +10,14 @@ const AiHashName = () => {
   const pauseTimeoutRef = useRef(null);
 
   const phrases = [
-    "Marketing AI Agent",
+    "Marketing Assistant Agent",
     "Sales AI Agent",
     "Customer Service AI Agent",
     "AI Image Generator",
     "Social Media AI Agent",
     "Data Analysis AI Agent",
     "Voice AI Agent",
-    "A CODE ARTIST",
+    "Facebook Leads AI Agent",
     "Brand Monitoring AI Agent ",
     "PerfeX AI Agent",
   ];
@@ -84,7 +84,7 @@ const AiHashName = () => {
         <div>
           {/* Simplified version - remove classes one by one to identify the culprit */}
           <span
-            className="hover-glow text-4xl font-bold"
+            className="hover-glow text-4xl font-[var(--my-font-weight)]"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >

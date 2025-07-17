@@ -1,11 +1,22 @@
 .hover-glow {
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-  color: #AA60C8;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .hover-glow:hover {
   color: #D69ADE !important;
   text-shadow: 0 0 5px #7D1C4A, 0 0 5px #7D1C4A !important;
-  /* Add more specificity and force the shadow */
+  
+}
+.brand-home {
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  color: #7B2CBF;
+  cursor: pointer;
+}
+.text-input-field {
+  color: #FFFFFF;
+}
+.bg-submit-input{
+  background-color: #7B2CBF;
 }

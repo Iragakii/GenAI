@@ -1,17 +1,21 @@
 import React from "react";
 import SideBar from "./SideBar";
-import Navigation from "./Navigation";
 import AiHashName from "./AiHashName";
+import InputFeild from "./InputFeild";
+import BrandName from "./BrandName";
 
 const HomePage = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <SideBar />
-      <div className="ml-0 sm:ml-[80px]">
-        <Navigation />
-      </div>
-      <div className="flex items-center justify-center h-screen w-screen relative lg:-top-50">
-        <AiHashName />
+      <div className="flex flex-col items-center justify-center h-screen w-screen relative lg:-top-40 ">
+        <div className="mb-1">
+          <BrandName />
+        </div>
+        <div className="mb-20">
+          <AiHashName />
+        </div>
+        <InputFeild className />
       </div>
     </div>
   );
