@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import SideBar from "./SideBar";
 import AiHashName from "./AiHashName";
 import InputFeild from "./InputFeild";
 import BrandName from "./BrandName";
 
-const HomePage = () => {
+const HomePage: FC = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <SideBar />
@@ -15,7 +15,7 @@ const HomePage = () => {
         <div className="mb-20">
           <AiHashName />
         </div>
-        <InputFeild className />
+        <InputFeild />
       </div>
     </div>
   );

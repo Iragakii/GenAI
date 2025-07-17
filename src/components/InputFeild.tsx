@@ -1,24 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, FC, ChangeEvent, FormEvent } from "react";
 
-const InputFeild = () => {
-  const [input, setInput] = useState("");
+const InputFeild: FC = () => {
+  const [input, setInput] = useState<string>("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setInput("");
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInput(e.target.value);
   };
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-3xl mx-auto p-4">
       <div className="flex flex-col gap-4">
         <div
-          className="flex flex-col p-3 border rounded-3xl min-w-[600px] min-h-[140px] "
+          className="flex flex-col p-3 border rounded-4xl min-w-[600px] min-h-[140px] border-input-field-color"
           style={{ backgroundColor: "#313131" }}
         >
           <input
             type="text"
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={handleChange}
             placeholder="Hỏi bất cứ điều gì, tạo ra bất cứ điều gì"
             className="w-full px-4 py-2 text-input-field focus:outline-none focus:ring-0"
           />

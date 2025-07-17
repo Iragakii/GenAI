@@ -1,15 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, FC } from "react";
 import { Link } from "react-router-dom";
 import "../styles/custom.css";
 
-const AiHashName = () => {
-  const [isHovering, setIsHovering] = useState(false);
-  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const [displayText, setDisplayText] = useState("");
-  const animationRef = useRef(null);
-  const pauseTimeoutRef = useRef(null);
+type Timeout = ReturnType<typeof setTimeout>;
 
-  const phrases = [
+const AiHashName: FC = () => {
+  const [isHovering, setIsHovering] = useState<boolean>(false);
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState<number>(0);
+  const [displayText, setDisplayText] = useState<string>("");
+  const animationRef = useRef<Timeout | null>(null);
+  const pauseTimeoutRef = useRef<Timeout | null>(null);
+
+  const phrases: string[] = [
     "Marketing Assistant Agent",
     "Sales AI Agent",
     "Customer Service AI Agent",
@@ -22,16 +24,16 @@ const AiHashName = () => {
     "PerfeX AI Agent",
   ];
 
-  const animateToNextPhrase = (fromText, toText) => {
+  const animateToNextPhrase = (fromText: string, toText: string) => {
     let currentIndex = 0;
-    clearInterval(animationRef.current);
+    if (animationRef.current) clearInterval(animationRef.current);
 
     animationRef.current = setInterval(() => {
       if (currentIndex >= toText.length) {
-        clearInterval(animationRef.current);
+        if (animationRef.current) clearInterval(animationRef.current);
         setDisplayText(toText);
 
-        clearTimeout(pauseTimeoutRef.current);
+        if (pauseTimeoutRef.current) clearTimeout(pauseTimeoutRef.current);
         pauseTimeoutRef.current = setTimeout(() => {
           if (isHovering) {
             setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length);
@@ -54,8 +56,8 @@ const AiHashName = () => {
     setDisplayText(phrases[0]);
 
     return () => {
-      clearInterval(animationRef.current);
-      clearTimeout(pauseTimeoutRef.current);
+      if (animationRef.current) clearInterval(animationRef.current);
+      if (pauseTimeoutRef.current) clearTimeout(pauseTimeoutRef.current);
     };
   }, []);
 
@@ -72,17 +74,16 @@ const AiHashName = () => {
       const nextIndex = (currentPhraseIndex + 1) % phrases.length;
       setCurrentPhraseIndex(nextIndex);
     } else {
-      clearInterval(animationRef.current);
-      clearTimeout(pauseTimeoutRef.current);
+      if (animationRef.current) clearInterval(animationRef.current);
+      if (pauseTimeoutRef.current) clearTimeout(pauseTimeoutRef.current);
       setDisplayText(phrases[currentPhraseIndex]);
     }
   }, [isHovering]);
 
   return (
     <>
-      <Link>
+      <Link to="#">
         <div>
-          {/* Simplified version - remove classes one by one to identify the culprit */}
           <span
             className="hover-glow text-4xl font-[var(--my-font-weight)]"
             onMouseEnter={() => setIsHovering(true)}
