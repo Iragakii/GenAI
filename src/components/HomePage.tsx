@@ -4,12 +4,13 @@ import AiHashName from "./AiHashName";
 import InputFeild from "./InputFeild";
 import BrandName from "./BrandName";
 import NewAi from "./AiList/NewAi";
+import ComingAi from "./AiList/ComingAi";
 
 const HomePage: FC = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <SideBar />
-      <div className="flex flex-col items-center justify-center h-screen w-screen relative lg:-top-40 ">
+      <div className="flex flex-col items-center justify-center h-screen w-screen relative lg:-top-30 ">
         <div className="mb-1">
           <BrandName />
         </div>
@@ -21,6 +22,9 @@ const HomePage: FC = () => {
 
         <div className="mt-10">
           <NewAi />
+        </div>
+        <div className="mt-20">
+          <ComingAi />
         </div>
       </div>
     </div>
