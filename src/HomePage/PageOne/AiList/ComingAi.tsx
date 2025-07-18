@@ -46,7 +46,7 @@ const ComingAi = () => {
         </Link>
       </div>
 
-      <div className="mt-7 absolute left-[40px] top-[53px] flex items-center justify-center gap-2 hover-glow">
+      <div className="b-postion-coming mt-7 absolute left-[40px] top-[53px] flex items-center justify-center gap-2 hover-glow">
         <span className="text-white text-center font-medium text-[14px] leading-[15px] text-nowrap">
           Sắp ra mắt
         </span>

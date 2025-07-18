@@ -115,43 +115,46 @@ const ScreenHomePageTwo = () => {
   // tốt cho hướng đi lâu dài của trang web và đảm bảo chất lượng ui hàng đầu về web ai agent
   const breakpointColumnsObj = {
     default: 5,
-    1100: 4,
+    1600: 4,
+    1200: 3,
+    1100: 3,
+    900: 2,
     700: 3,
+    896: 3,
     500: 2,
+    375: 2,
   };
 
   return (
-    <div className="flex flex-col sm:flex-row">
+    <div className="flex flex-col sm:flex-row min-h-screen">
       <SideBar />
-      <div
-        className="flex-1 py-5 px-2 flex justify-center"
-        style={{ paddingLeft: "80px" }}
-      >
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
-          {trendingPosts.map((post, index) => (
-            <div key={index} className="mb-1">
-              <TrendingPost
-                imageUrl={post.imageUrl}
-                category={post.category}
-                title={post.title}
-                linkUrl={
-                  index === 0
-                    ? "https://nhansuso.vn/"
-                    : index === 1
-                    ? "https://www.pinterest.com/pin/2674081025477864/"
-                    : "#"
-                }
-              />
-            </div>
-          ))}
-        </Masonry>
+      <div className="flex-1 p-4 sm:pl-[90px] lg:pl-[100px]">
+        <div className="max-w-[1600px] mx-auto">
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            {trendingPosts.map((post, index) => (
+              <div key={index} className="mb-2 px-1 sm:px-2">
+                <TrendingPost
+                  imageUrl={post.imageUrl}
+                  category={post.category}
+                  title={post.title}
+                  linkUrl={
+                    index === 0
+                      ? "https://www.pinterest.com/pin/3377768468159719/"
+                      : index === 1
+                      ? "https://www.pinterest.com/pin/2674081025477864/"
+                      : "#"
+                  }
+                />
+              </div>
+            ))}
+          </Masonry>
+        </div>
       </div>
     </div>
   );
 };
-
 export default ScreenHomePageTwo;

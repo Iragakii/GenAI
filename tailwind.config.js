@@ -11,6 +11,12 @@ module.exports = {
       textShadow: {
         glow: "0 0 8px #FFDFEF",
       },
+      screens: {
+        ipadair: "1180px",
+        "iphone-se": {
+          raw: "(device-width: 375px) and (device-height: 667px)",
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-textshadow")],

@@ -85,7 +85,7 @@ const AiHashName: FC = () => {
       <Link to="#">
         <div>
           <span
-            className="hover-glow text-4xl font-[var(--my-font-weight)]"
+            className="hover-glow text-2xl sm:text-4xl font-[var(--my-font-weight)] px-4 text-center block"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >

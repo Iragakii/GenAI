@@ -13,10 +13,10 @@ const InputFeild: FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-5xl mx-auto p-4">
+    <form onSubmit={handleSubmit} className="w-full max-w-5xl mx-auto px-4">
       <div className="flex flex-col gap-4">
         <div
-          className="flex flex-col p-3 border rounded-4xl w-full max-w-5xl min-h-[160px] border-input-field-color"
+          className="flex flex-col p-3 border rounded-2xl sm:rounded-4xl w-full max-w-5xl min-h-[120px] sm:min-h-[160px]   border-input-field-color"
           style={{ backgroundColor: "#313131" }}
         >
           <input
@@ -24,9 +24,9 @@ const InputFeild: FC = () => {
             value={input}
             onChange={handleChange}
             placeholder="Hỏi bất cứ điều gì"
-            className="w-full px-4 py-2 text-input-field focus:outline-none focus:ring-0 text-2xl"
+            className="w-full px-2 sm:px-4 py-2 text-input-field focus:outline-none focus:ring-0 text-lg sm:text-2xl"
           />
-          <div className="flex items-center gap-4 mt-9 mr-2 justify-end">
+          <div className="flex items-center gap-2 sm:gap-4 mt-4 sm:mt-9 mr-2 justify-end">
             <button
               type="submit"
               className="text-white hover:text-gray-300 transition-colors cursor-pointer"

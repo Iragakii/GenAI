@@ -231,17 +231,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .icon-stack-container {
-    width: 140px;
-    height: 70px;
-  }
-  
-  .stack-icon.youtube {
-    width: 48px;
-    height: 48px;
-  }
-}
+
 
 /* Custom gradient line styling */
 .trending-line {
@@ -249,11 +239,6 @@
   height: 1px;
 }
 
-@media (min-width: 768px) {
-  .trending-line {
-    width: 210px;
-  }
-}
 
 .trending-line path {
   stroke: url(#gradient);
@@ -264,3 +249,50 @@
 .dark .trending-line {
   transform: rotate(180deg);
 }
+@media (min-width: 320px) and (max-width: 767px) { 
+
+   .ri-send-plane-line{
+    font-size: 0.5rem;
+  }
+  .ri-mic-line{
+    font-size: 1rem;
+  }
+  .ri-attachment-2{
+    font-size: 1rem;
+  }
+  .icon-stack-container {
+    width: 140px;
+    height: 70px;
+  }
+  
+  .stack-icon.youtube {
+    width: 48px;
+    height: 48px;
+  }
+.trending-line {
+    width: 210px;
+  }
+  .left-group-animate .stack-icon.instagram {
+  left: -40px; 
+}
+
+.left-group-animate .stack-icon.twitter {
+  left: -2px; 
+}
+
+.left-group-animate .stack-icon.threads {
+  left: 46px; 
+}
+
+.right-group-animate .stack-icon.tiktok {
+  right: 46px; 
+}
+
+.right-group-animate .stack-icon.wordpress {
+  right: -2px; 
+}
+
+.right-group-animate .stack-icon.word {
+  right: -40px; 
+}
+  } 
