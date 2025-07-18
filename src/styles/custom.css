@@ -1,4 +1,3 @@
-
 .hover-glow {
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   color: #ffffff;
@@ -16,7 +15,6 @@
   cursor: pointer;
 }
 
-
 .text-input-field {
   color: #FFFFFF;
 }
@@ -29,7 +27,6 @@
   border-color: #758694;
   box-shadow: 0px 0px 13px #758694;
 }
-
 
 .f-color-ai-list {
   background-color: #26355D;
@@ -63,7 +60,6 @@
   background-color: #F1D4D4;
 }
 
-
 .w-17 {
   width: 4.25rem;
 }
@@ -72,7 +68,6 @@
   height: 4.25rem;
 }
 
-
 .bg-gradient-pink-blue {
   background: linear-gradient(180deg, #EC4899 0%, #153885 100%);
 }
@@ -80,7 +75,6 @@
 .bg-gradient-purple-orange {
   background: linear-gradient(180deg, #7B2CBF 0%, #FF4F03 100%);
 }
-
 
 .icon-stack-container {
   position: relative;
@@ -109,7 +103,6 @@
   cursor: pointer;
 }
 
-
 .stack-icon.youtube {
   width: 58px;
   height: 58px;
@@ -123,7 +116,6 @@
 .stack-icon.youtube:hover {
   transform: translateX(-50%) scale(1.15);
 }
-
 
 .stack-icon.instagram {
   width: 30px;
@@ -152,7 +144,6 @@
   z-index: 400;
 }
 
-
 .stack-icon.tiktok {
   width: 50px;
   height: 50px;
@@ -180,13 +171,11 @@
   z-index: 300;
 }
 
-
 .stack-icon:hover {
   z-index: 1000 !important;
   transform: scale(1.15);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
-
 
 .icon-group {
   gap: 0;
@@ -200,7 +189,6 @@
 .icon-group-stacked {
   gap: 0 !important;
 }
-
 
 .left-group-animate .stack-icon.instagram {
   left: -70px; 
@@ -226,7 +214,6 @@
   right: -70px; 
 }
 
-
 .left-group-animate {
   transform: translateX(-30px) !important;
 }
@@ -238,8 +225,11 @@
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-
-
+/* Custom rotation for arrow button */
+.button-moved img {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
 
 @media (max-width: 768px) {
   .icon-stack-container {
@@ -252,6 +242,7 @@
     height: 48px;
   }
 }
+
 /* Custom gradient line styling */
 .trending-line {
   width: 100px;

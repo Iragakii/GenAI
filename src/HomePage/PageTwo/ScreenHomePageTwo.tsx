@@ -140,7 +140,7 @@ const ScreenHomePageTwo = () => {
                 title={post.title}
                 linkUrl={
                   index === 0
-                    ? "https://www.pinterest.com/pin/3377768468159719/"
+                    ? "https://nhansuso.vn/"
                     : index === 1
                     ? "https://www.pinterest.com/pin/2674081025477864/"
                     : "#"
