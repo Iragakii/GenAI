@@ -11,7 +11,7 @@ const ScreenHomePageOne: FC = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <SideBar />
-      <div className="flex flex-col items-center justify-center h-screen w-screen relative lg:-top-10 ">
+      <div className="flex flex-col items-center justify-center min-h-screen flex-1 relative">
         <div className="mb-1">
           <BrandName />
         </div>

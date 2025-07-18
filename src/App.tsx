@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import ScreenHomePageOne from "./HomePage/ScreenHomePageOne";
+import ScreenHomePageOne from "./HomePage/PageOne/ScreenHomePageOne";
 
 const App: FC = () => {
   return (
