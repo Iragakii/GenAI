@@ -41,7 +41,12 @@ const InputFeild: FC = () => {
             </button>
             <button
               type="submit"
-              className="flex text-white items-center justify-center leading-[40px] p-3 py-2 relative box-border rounded-[8px] group bg-submit-input hover:scale-105 transition-all duration-300 ease-in-out outline-none focus:ring-2 focus:ring-pink-400 cursor-pointer"
+              className={`flex text-white items-center justify-center leading-[40px] p-3 py-2 relative box-border rounded-[8px] group ${
+                input.trim() === ""
+                  ? "bg-[#C89595] cursor-not-allowed"
+                  : "bg-submit-input hover:scale-105 cursor-pointer"
+              } transition-all duration-300 ease-in-out outline-none focus:ring-2 focus:ring-pink-400`}
+              disabled={input.trim() === ""}
             >
               <i className="ri-send-plane-line text-2xl group-hover:scale-[1.2] transition-all duration-300 ease-in-out"></i>
             </button>
