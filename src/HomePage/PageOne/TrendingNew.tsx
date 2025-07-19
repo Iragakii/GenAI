@@ -33,8 +33,8 @@ const TrendingNew = () => {
       </svg>
 
       <div className="mx-[5px] sm:mx-[11px]">
-        <div className="rounded-full bg-white py-[3px] sm:py-[5px] px-2 sm:px-3">
-          <span className="text-xs sm:text-base font-semibold text-black whitespace-nowrap">
+        <div className="round-trend-tit rounded-full bg-white py-[3px] sm:py-[5px] px-2 sm:px-3">
+          <span className="text-new-resize sm:text-base font-semibold text-black whitespace-nowrap">
             Social Trending
           </span>
         </div>

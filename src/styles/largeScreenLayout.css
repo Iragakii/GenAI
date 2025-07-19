@@ -1,0 +1,23 @@
+@media screen and (min-width: 1280px) {
+  .screen-home-page-two-container {
+    padding-left: 50px !important;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .screen-home-page-two-container {
+    padding-left: 40px !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .screen-home-page-two-container {
+    padding-left: 70px !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .screen-home-page-two-container {
+    padding-left: 80px !important;
+  }
+}

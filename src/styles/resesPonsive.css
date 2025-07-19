@@ -48,7 +48,6 @@
     font-size: 5px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    overflow: hidden;
   }
 
   .trending-category,
@@ -66,9 +65,6 @@
     font-size: 7px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -86,9 +82,6 @@
     font-size: 6px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -107,9 +100,6 @@
     font-size: 5px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -127,9 +117,6 @@
     font-size: 6px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -147,9 +134,6 @@
     font-size: 5px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -167,9 +151,6 @@
     font-size: 6px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -187,9 +168,6 @@
     font-size: 5px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -207,9 +185,6 @@
     font-size: 6px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -227,9 +202,6 @@
     font-size: 5px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -247,9 +219,6 @@
     font-size: 6px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -267,9 +236,6 @@
     font-size: 5px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -287,9 +253,6 @@
     font-size: 6px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -307,9 +270,6 @@
     font-size: 4.3px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -327,9 +287,6 @@
     font-size: 6px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -347,9 +304,6 @@
     font-size: 6px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -367,9 +321,6 @@
     font-size: 8px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -387,9 +338,6 @@
     font-size: 8px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -407,9 +355,6 @@
     font-size: 12px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -427,9 +372,6 @@
     font-size: 12px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -441,15 +383,12 @@
   }
 }
 
-@media only screen and (max-height: 1029px) and (orientation: landscape) {
+@media only screen and (max-height: 1368px) and (orientation: landscape) {
   .trending-title,
   .absolute.bottom-2.left-2.right-2 span {
-    font-size: 120px !important;
+    font-size: 12px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -467,9 +406,6 @@
     font-size: 9px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -487,9 +423,6 @@
     font-size: 10px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -507,9 +440,6 @@
     font-size: 6px !important;
     line-clamp: 1 !important;
     -webkit-line-clamp: 1 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -527,9 +457,6 @@
     font-size: 7px !important;
     line-clamp: 2 !important;
     -webkit-line-clamp: 2 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
   }
 
   .trending-category,
@@ -538,129 +465,5 @@
     font-size: 6px !important;
     padding-top: 1.5px !important;
     padding-bottom: 1.5px !important;
-  }
-}
-/* iPad Mini, Surface Duo (481-768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .trending-title,
-  .absolute.bottom-2.left-2.right-2 span {
-    font-size: 9px;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .trending-category,
-  .absolute.top-2.left-2 .text-\[8px\],
-  .absolute.top-2.left-2 span {
-    font-size: 10px;
-  }
-}
-
-/* iPad Air, iPad Pro 9.7" (769-834px) */
-@media only screen and (min-width: 769px) and (max-width: 834px) {
-  .trending-title,
-  .absolute.bottom-2.left-2.right-2 span {
-    font-size: 16px;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .trending-category,
-  .absolute.top-2.left-2 .text-\[8px\],
-  .absolute.top-2.left-2 span {
-    font-size: 11px;
-  }
-}
-
-/* iPad Pro 11", Surface Pro 7 (835-1024px) */
-@media only screen and (min-width: 835px) and (max-width: 1024px) {
-  .trending-title,
-  .absolute.bottom-2.left-2.right-2 span {
-    font-size: 17px;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .trending-category,
-  .absolute.top-2.left-2 .text-\[8px\],
-  .absolute.top-2.left-2 span {
-    font-size: 12px;
-  }
-}
-
-/* iPad Pro 12.9", Surface Pro 7 landscape (1025-1180px) */
-@media only screen and (min-width: 1025px) and (max-width: 1180px) {
-  .trending-title,
-  .absolute.bottom-2.left-2.right-2 span {
-    font-size: 18px;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .trending-category,
-  .absolute.top-2.left-2 .text-\[8px\],
-  .absolute.top-2.left-2 span {
-    font-size: 12px;
-  }
-}
-
-/* Galaxy Z Fold 5, Asus Zenbook Fold (280-344px folded, 676-768px unfolded) */
-@media only screen and (min-width: 280px) and (max-width: 344px) {
-  .trending-title,
-  .absolute.bottom-2.left-2.right-2 span {
-    font-size: 10px;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .trending-category,
-  .absolute.top-2.left-2 .text-\[8px\],
-  .absolute.top-2.left-2 span {
-    font-size: 6px;
-  }
-}
-
-@media only screen and (min-width: 676px) and (max-width: 768px) {
-  .trending-title,
-  .absolute.bottom-2.left-2.right-2 span {
-    font-size: 15px;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .trending-category,
-  .absolute.top-2.left-2 .text-\[8px\],
-  .absolute.top-2.left-2 span {
-    font-size: 10px;
   }
 }

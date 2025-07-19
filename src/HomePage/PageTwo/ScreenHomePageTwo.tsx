@@ -1,12 +1,9 @@
-// ScreenHomePageTwo.tsx
-import React from "react";
-import SideBar from "../PageOne/SideBar";
 import TrendingPost from "./TrendingPost";
 import "../../styles/customHomeScreenTwo.css";
 import Masonry from "react-masonry-css";
 import "../../styles/resesPonsive.css";
+import "../../styles/largeScreenLayout.css";
 const ScreenHomePageTwo = () => {
-  // Sample data with different images and content
   const trendingPosts = [
     {
       imageUrl:
@@ -136,11 +133,12 @@ const ScreenHomePageTwo = () => {
     1180: 5,
     390: 3,
     1025: 5,
+    1368: 5,
   };
 
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="flex flex-col flex-1 min-h-screen custom-ipad-hehe">
+      <div className="flex flex-col flex-1 min-h-screen custom-ipad-hehe screen-home-page-two-container">
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
