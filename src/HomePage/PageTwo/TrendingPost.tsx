@@ -32,7 +32,7 @@ const TrendingPost: React.FC<TrendingPostProps> = ({
         </div>
 
         <div className="absolute bottom-2 left-2 right-2 bg-black/60 group-hover:bg-[#222831] backdrop-blur-sm p-2 rounded-2xl transition-all duration-300 ease-in-out">
-          <span className="text-sm font-medium line-clamp-2  line-clamp-res text-white">
+          <span className="text-sm font-medium line-clamp-2 line-clamp-res text-white">
             {title}
           </span>
         </div>

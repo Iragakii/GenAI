@@ -137,33 +137,31 @@ const ScreenHomePageTwo = () => {
   };
 
   return (
-    <div className="flex flex-col  min-h-screen sm:justify-center sm:items-center items-center">
+    <div className="flex flex-col sm:flex-row">
       <SideBar />
-      <div className="flex-1 p-[11px] sm:pl-0 lg:pl-0">
-        <div className="max-w-[1072px] mx-auto px-[11px]">
-          <Masonry
-            breakpointCols={breakpointColumnsObj}
-            className="my-masonry-grid"
-            columnClassName="my-masonry-grid_column"
-          >
-            {trendingPosts.map((post, index) => (
-              <div key={index} className="mb-[5px] px-[3px] sm:px-[5px]">
-                <TrendingPost
-                  imageUrl={post.imageUrl}
-                  category={post.category}
-                  title={post.title}
-                  linkUrl={
-                    index === 0
-                      ? "https://www.pinterest.com/pin/3377768468159719/"
-                      : index === 1
-                      ? "https://www.pinterest.com/pin/2674081025477864/"
-                      : "#"
-                  }
-                />
-              </div>
-            ))}
-          </Masonry>
-        </div>
+      <div className="flex flex-col items-center justify-start px-[11px] pt-[43px] sm:pt-0 sm:justify-center flex-1 relative m-h min-h-screen">
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {trendingPosts.map((post, index) => (
+            <div key={index}>
+              <TrendingPost
+                imageUrl={post.imageUrl}
+                category={post.category}
+                title={post.title}
+                linkUrl={
+                  index === 0
+                    ? "https://www.pinterest.com/pin/3377768468159719/"
+                    : index === 1
+                    ? "https://www.pinterest.com/pin/2674081025477864/"
+                    : "#"
+                }
+              />
+            </div>
+          ))}
+        </Masonry>
       </div>
     </div>
   );
