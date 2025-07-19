@@ -4,23 +4,39 @@
   cursor: pointer;
 }
 
+@keyframes scalePulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-scalePulse {
+  animation: scalePulse 1s infinite;
+}
+
 .hover-glow:hover {
-  color: #D69ADE !important;
-  text-shadow: 0 0 5px #7D1C4A, 0 0 5px #7D1C4A !important;
+  color: #d69ade !important;
+  text-shadow: 0 0 5px #7d1c4a, 0 0 5px #7d1c4a !important;
 }
 
 .brand-home {
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-  color: #DB2777;
+  color: #db2777;
   cursor: pointer;
 }
 
 .text-input-field {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .bg-submit-input {
-  background-color: #DB2777;
+  background-color: #db2777;
 }
 
 .border-input-field-color {
@@ -29,11 +45,11 @@
 }
 
 .f-color-ai-list {
-  background-color: #26355D;
+  background-color: #26355d;
 }
 
 .f-color-ai-list:hover {
-  background-color: #F1D4D4;
+  background-color: #f1d4d4;
 }
 
 .s-color-ai-list {
@@ -41,7 +57,7 @@
 }
 
 .s-color-ai-list:hover {
-  background-color: #F1D4D4;
+  background-color: #f1d4d4;
 }
 
 .img-color-ai-list {
@@ -49,7 +65,7 @@
 }
 
 .img-color-ai-list:hover {
-  background-color: #F1D4D4;
+  background-color: #f1d4d4;
 }
 
 .video-color-ai-list {
@@ -57,7 +73,7 @@
 }
 
 .video-color-ai-list:hover {
-  background-color: #F1D4D4;
+  background-color: #f1d4d4;
 }
 
 .w-17 {
@@ -69,25 +85,25 @@
 }
 
 .bg-gradient-pink-blue {
-  background: linear-gradient(180deg, #EC4899 0%, #153885 100%);
+  background: linear-gradient(180deg, #ec4899 0%, #153885 100%);
 }
 
 .bg-gradient-purple-orange {
-  background: linear-gradient(180deg, #7B2CBF 0%, #FF4F03 100%);
+  background: linear-gradient(180deg, #7b2cbf 0%, #ff4f03 100%);
 }
 
 .icon-stack-container {
   position: relative;
-  width: 160px;
-  height: 82px;
-  isolation: isolate; 
+  width: 107px;
+  height: 55px;
+  isolation: isolate;
 }
-.right-icon-group{
-  right: -30px;
+.right-icon-group {
+  right: -20px;
   position: relative;
 }
-.left-icon-group{
-  left: -28px;
+.left-icon-group {
+  left: -19px;
   position: relative;
 }
 .stack-icon {
@@ -104,8 +120,8 @@
 }
 
 .stack-icon.youtube {
-  width: 58px;
-  height: 58px;
+  width: 39px;
+  height: 39px;
   background: white;
   top: 0;
   left: 50%;
@@ -118,55 +134,55 @@
 }
 
 .stack-icon.instagram {
-  width: 30px;
-  height: 30px;
-  background: #1F7D53;
-  top: 28px;
+  width: 20px;
+  height: 20px;
+  background: #1f7d53;
+  top: 19px;
   left: 0;
   z-index: 300;
 }
 
 .stack-icon.twitter {
-  width: 40px;
-  height: 40px;
-  background: #27391C;
-  top: 17px;
-  left: 20px;
+  width: 27px;
+  height: 27px;
+  background: #27391c;
+  top: 11px;
+  left: 13px;
   z-index: 350;
 }
 
 .stack-icon.threads {
-  width: 50px;
-  height: 50px;
-  background: #18230F;
-  top: 8px;
-  left: 50px;
+  width: 34px;
+  height: 34px;
+  background: #18230f;
+  top: 5px;
+  left: 34px;
   z-index: 400;
 }
 
 .stack-icon.tiktok {
-  width: 50px;
-  height: 50px;
+  width: 34px;
+  height: 34px;
   background: #222222;
-  top: 8px;
-  right: 50px;
+  top: 5px;
+  right: 34px;
   z-index: 400;
 }
 
 .stack-icon.wordpress {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(180deg, #7B2CBF 0%, #FF4F03 100%);
-  top: 17px;
-  right: 20px;
+  width: 27px;
+  height: 27px;
+  background: linear-gradient(180deg, #7b2cbf 0%, #ff4f03 100%);
+  top: 11px;
+  right: 13px;
   z-index: 350;
 }
 
 .stack-icon.word {
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(180deg, #EC4899 0%, #153885 100%);
-  top: 28px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(180deg, #ec4899 0%, #153885 100%);
+  top: 19px;
   right: 0;
   z-index: 300;
 }
@@ -183,7 +199,7 @@
 }
 
 .icon-group-spaced {
-  gap: 30px !important;
+  gap: 20px !important;
 }
 
 .icon-group-stacked {
@@ -191,35 +207,35 @@
 }
 
 .left-group-animate .stack-icon.instagram {
-  left: -70px; 
+  left: -47px;
 }
 
 .left-group-animate .stack-icon.twitter {
-  left: -21px; 
+  left: -14px;
 }
 
 .left-group-animate .stack-icon.threads {
-  left: 36px; 
+  left: 24px;
 }
 
 .right-group-animate .stack-icon.tiktok {
-  right: 36px; 
+  right: 24px;
 }
 
 .right-group-animate .stack-icon.wordpress {
-  right: -21px; 
+  right: -14px;
 }
 
 .right-group-animate .stack-icon.word {
-  right: -70px; 
+  right: -47px;
 }
 
 .left-group-animate {
-  transform: translateX(-30px) !important;
+  transform: translateX(-20px) !important;
 }
 
 .right-group-animate {
-  transform: translateX(30px) !important;
+  transform: translateX(20px) !important;
 }
 .stack-icon {
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -231,14 +247,11 @@
   transition: transform 0.3s ease-in-out;
 }
 
-
-
 /* Custom gradient line styling */
 .trending-line {
-  width: 100px;
+  width: 45px;
   height: 1px;
 }
-
 
 .trending-line path {
   stroke: url(#gradient);
@@ -249,50 +262,49 @@
 .dark .trending-line {
   transform: rotate(180deg);
 }
-@media (min-width: 320px) and (max-width: 767px) { 
-
-   .ri-send-plane-line{
+@media (min-width: 214px) and (max-width: 514px) {
+  .ri-send-plane-line {
     font-size: 0.5rem;
   }
-  .ri-mic-line{
+  .ri-mic-line {
     font-size: 1rem;
   }
-  .ri-attachment-2{
+  .ri-attachment-2 {
     font-size: 1rem;
   }
   .icon-stack-container {
-    width: 140px;
-    height: 70px;
+    width: 63px;
+    height: 31px;
   }
-  
+
   .stack-icon.youtube {
-    width: 48px;
-    height: 48px;
+    width: 21px;
+    height: 21px;
   }
-.trending-line {
-    width: 210px;
+  .trending-line {
+    width: 94px;
   }
   .left-group-animate .stack-icon.instagram {
-  left: -40px; 
-}
+    left: -8px;
+  }
 
-.left-group-animate .stack-icon.twitter {
-  left: -2px; 
-}
+  .left-group-animate .stack-icon.twitter {
+    left: -1px;
+  }
 
-.left-group-animate .stack-icon.threads {
-  left: 46px; 
-}
+  .left-group-animate .stack-icon.threads {
+    left: 9px;
+  }
 
-.right-group-animate .stack-icon.tiktok {
-  right: 46px; 
-}
+  .right-group-animate .stack-icon.tiktok {
+    right: 9px;
+  }
 
-.right-group-animate .stack-icon.wordpress {
-  right: -2px; 
-}
+  .right-group-animate .stack-icon.wordpress {
+    right: -1px;
+  }
 
-.right-group-animate .stack-icon.word {
-  right: -40px; 
+  .right-group-animate .stack-icon.word {
+    right: -8px;
+  }
 }
-  } 

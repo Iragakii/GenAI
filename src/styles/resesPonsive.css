@@ -1,37 +1,35 @@
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1072px) {
   .my-masonry-grid_column {
     position: relative;
-    left:  20px;
+    left: 13px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 251px) {
   .my-masonry-grid {
-    margin-left: -2px;
+    margin-left: -1px;
   }
-  
+
+  .my-masonry-grid_column {
+    padding-left: 2px;
+  }
+}
+
+@media screen and (min-width: 685px) {
+  .my-masonry-grid {
+    padding-right: 11px;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .my-masonry-grid {
+    margin-left: -3px;
+  }
+
   .my-masonry-grid_column {
     padding-left: 3px;
   }
-  
 }
-
-@media screen and (min-width: 1024px) {
-  .my-masonry-grid {
-    padding-right: 16px; 
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .my-masonry-grid {
-    margin-left: -4px;
-  }
-  
-  .my-masonry-grid_column {
-    padding-left: 4px;
-  }
-}
-
 
 .my-masonry-grid img {
   max-width: 100%;
@@ -39,18 +37,18 @@
   display: block;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 214px) and (max-width: 514px) {
   .my-masonry-grid {
     margin-left: 0;
-    padding: 0 8px;
+    padding: 0 5px;
   }
 
   .my-masonry-grid_column {
-    padding: 0 4px;
+    padding: 0 3px;
   }
 
   .my-masonry-grid_column > div {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .bg-trend-post {
@@ -58,338 +56,248 @@
   }
 }
 
-@media (max-width: 667px) and (orientation: landscape) {
+@media (max-width: 447px) and (orientation: landscape) {
   .my-masonry-grid {
-    margin-left: -4px;
+    margin-left: -3px;
   }
-  
+
   .my-masonry-grid_column {
-    padding-left: 4px;
+    padding-left: 3px;
   }
 }
 
+@media only screen and (min-device-width: 251px) and (max-device-width: 447px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .my-masonry-grid {
+    padding-left: 0;
+    margin-left: -1px;
+  }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-   
-    .my-masonry-grid {
-      padding-left: 0;
-      margin-left: -2px;
-      
-    }
-    
-    .my-masonry-grid_column {
-      padding-left: 2px;
-      position: relative;
-      right: 30px!important;
-    }
-   
-  
-}
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .f-postion {
-     
-      margin-top: 2rem !important;
-      
-    }
-  
-}
-@media only screen 
-  
-  and (max-device-width: 896px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .my-masonry-grid {
-      padding-left: 0;
-      margin-left: -2px;
-      
-    }
-    
-    .my-masonry-grid_column {
-      padding-left: 2px;
-      position: relative;
-      right: 40px!important;
-    }
-
-}
-@media only screen 
-  
-  and (max-device-width: 936px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .my-masonry-grid {
-      padding-left: 0;
-      margin-left: -2px;
-      
-    }
-    
-    .my-masonry-grid_column {
-      padding-left: 2px;
-      position: relative;
-      right: 37px!important;
-    }
-
-}
-@media only screen 
-  
-  and (max-device-width: 956px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .my-masonry-grid {
-      padding-left: 0;
-      margin-left: -2px;
-      
-    }
-    
-    .my-masonry-grid_column {
-      padding-left: 2px;
-      position: relative;
-      right: 20px;
-    }
-}
-@media only screen 
-  
-  and (max-device-width: 740px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .my-masonry-grid {
-      padding-left: 0;
-      margin-left: -2px;
-      
-    }
-    
-    .my-masonry-grid_column {
-      padding-left: 2px;
-      position: relative;
-      right: 14px;
-    }
-}
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .my-masonry-grid {
-      padding-left: 0;
-      margin-left: -4px;
-    }
-    
-    .my-masonry-grid_column {
-      padding-left: 4px;
-      position: relative;
-      right: 35px;
-    }
-
-   
-    @media (orientation: portrait) {
-      
-    }
-    .hidden-ipad {
-      display: none!important;
-    } 
-}
-
-@media only screen 
-  
-  and (max-device-width: 932px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-   
-    .group div[class*="absolute top-2"] {
-      top: 0.25rem;
-      left: 0.25rem;
-      padding: 0.25rem !important;
-    }
-
-    .group div[class*="absolute top-2"] div {
-      gap: 0.125rem;
-    }
-
-    .group div[class*="absolute top-2"] i,
-    .group div[class*="absolute top-2"] span {
-      font-size: 0.3rem !important;
-    }
-
-    /* Title container */
-    .group div[class*="absolute bottom-2"] {
-      bottom: 0.25rem;
-      left: 0.25rem;
-      right: 0.25rem;
-      padding: 0.25rem 0.5rem !important;
-    }
-
-    .group div[class*="absolute bottom-2"] span {
-      font-size: 0.7rem;
-      
-    }
-     .line-clamp-res {
-      -webkit-line-clamp: 2;
-      line-clamp: 2 !important;
-    }
-}
-
-@media only screen 
-  
-  and (min-device-width: 430px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-   
-    .group div[class*="absolute top-2"] {
-      top: 0.25rem;
-      left: 0.25rem;
-      padding: 0.25rem !important;
-    }
-
-    .group div[class*="absolute top-2"] div {
-      gap: 0.125rem;
-    }
-
-    .group div[class*="absolute top-2"] i,
-    .group div[class*="absolute top-2"] span {
-      font-size: 0.3rem !important;
-    }
-
-    /* Title container */
-    .group div[class*="absolute bottom-2"] {
-      bottom: 0.25rem;
-      left: 0.25rem;
-      right: 0.25rem;
-      padding: 0.25rem 0.5rem !important;
-    }
-
-    .group div[class*="absolute bottom-2"] span {
-      font-size: 0.4rem;
-      
-    }
-     .line-clamp-res {
-      -webkit-line-clamp: 2;
-      line-clamp: 2 !important;
-    }
-}
-@media only screen 
-  
-  and (min-device-width: 412px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-   
-    .group div[class*="absolute top-2"] {
-      top: 0.25rem;
-      left: 0.25rem;
-      padding: 0.25rem !important;
-    }
-
-    .group div[class*="absolute top-2"] div {
-      gap: 0.125rem;
-    }
-
-    .group div[class*="absolute top-2"] i,
-    .group div[class*="absolute top-2"] span {
-      font-size: 0.3rem !important;
-    }
-
-   
-    .group div[class*="absolute bottom-2"] {
-      bottom: 0.25rem;
-      left: 0.25rem;
-      right: 0.25rem;
-      padding: 0.25rem 0.5rem !important;
-    }
-
-    .group div[class*="absolute bottom-2"] span {
-      font-size: 0.4rem;
-      
-    }
-     .line-clamp-res {
-      -webkit-line-clamp: 2;
-      line-clamp: 2 !important;
-    }
-}
-@media only screen 
-  
-  and (min-device-width: 360px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-   
-    .group div[class*="absolute top-2"] {
-      top: 0.25rem;
-      left: 0.25rem;
-      padding: 0.25rem !important;
-    }
-
-    .group div[class*="absolute top-2"] div {
-      gap: 0.125rem;
-    }
-
-    .group div[class*="absolute top-2"] i,
-    .group div[class*="absolute top-2"] span {
-      font-size: 0.3rem !important;
-    }
-
-   
-    .group div[class*="absolute bottom-2"] {
-      bottom: 0.25rem;
-      left: 0.25rem;
-      right: 0.25rem;
-      padding: 0.25rem 0.5rem !important;
-    }
-
-    .group div[class*="absolute bottom-2"] span {
-      font-size: 0.4rem;
-      
-    }
-     .line-clamp-res {
-      -webkit-line-clamp: 2;
-      line-clamp: 2 !important;
-    }
-}
-
-
-
-
-@media only screen 
-  
-  and (min-device-width: 360px) 
-  and (max-device-width: 1180px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-   
-    .my-masonry-grid_column {
-      padding-left: 2px;
-      position: relative;
-      left: 10px!important;
-    }
-}
-@media only screen 
-  and (max-device-width: 1180px) 
-  and (min-device-width: 820px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    
   .my-masonry-grid_column {
-    padding-left: 2px;
-    position: relative; 
-    left: -30px!important;
+    padding-left: 1px;
+    position: relative;
+    right: 20px !important;
+  }
+}
+@media only screen and (min-device-width: 251px) and (max-device-width: 447px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .f-postion {
+    margin-top: 1rem !important;
+  }
+}
+@media only screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .my-masonry-grid {
+    padding-left: 0;
+    margin-left: -1px;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 1px;
+    position: relative;
+    right: 27px !important;
+  }
+}
+@media only screen and (max-device-width: 626px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .my-masonry-grid {
+    padding-left: 0;
+    margin-left: -1px;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 1px;
+    position: relative;
+    right: 25px !important;
+  }
+}
+@media only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .my-masonry-grid {
+    padding-left: 0;
+    margin-left: -1px;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 1px;
+    position: relative;
+    right: 13px;
+  }
+}
+@media only screen and (max-device-width: 496px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .my-masonry-grid {
+    padding-left: 0;
+    margin-left: -1px;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 1px;
+    position: relative;
+    right: 9px;
+  }
+}
+@media only screen and (min-device-width: 514px) and (max-device-width: 685px) and (-webkit-min-device-pixel-ratio: 2) {
+  .my-masonry-grid {
+    padding-left: 0;
+    margin-left: -3px;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 3px;
+    position: relative;
+    right: 23px;
+  }
+
+  @media (orientation: portrait) {
+  }
+  .hidden-ipad {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-device-width: 623px) and (-webkit-min-device-pixel-ratio: 2) {
+  .group div[class*="absolute top-2"] {
+    top: 0.17rem;
+    left: 0.17rem;
+    padding: 0.17rem !important;
+  }
+
+  .group div[class*="absolute top-2"] div {
+    gap: 0.08rem;
+  }
+
+  .group div[class*="absolute top-2"] i,
+  .group div[class*="absolute top-2"] span {
+    font-size: 0.2rem !important;
+  }
+
+  /* Title container */
+  .group div[class*="absolute bottom-2"] {
+    bottom: 0.17rem;
+    left: 0.17rem;
+    right: 0.17rem;
+    padding: 0.17rem 0.34rem !important;
+  }
+
+  .group div[class*="absolute bottom-2"] span {
+    font-size: 0.47rem;
+  }
+  .line-clamp-res {
+    -webkit-line-clamp: 2;
+    line-clamp: 2 !important;
+  }
+}
+
+@media only screen and (min-device-width: 288px) and (-webkit-min-device-pixel-ratio: 2) {
+  .group div[class*="absolute top-2"] {
+    top: 0.17rem;
+    left: 0.17rem;
+    padding: 0.17rem !important;
+  }
+
+  .group div[class*="absolute top-2"] div {
+    gap: 0.08rem;
+  }
+
+  .group div[class*="absolute top-2"] i,
+  .group div[class*="absolute top-2"] span {
+    font-size: 0.2rem !important;
+  }
+
+  /* Title container */
+  .group div[class*="absolute bottom-2"] {
+    bottom: 0.17rem;
+    left: 0.17rem;
+    right: 0.17rem;
+    padding: 0.17rem 0.34rem !important;
+  }
+
+  .group div[class*="absolute bottom-2"] span {
+    font-size: 0.27rem;
+  }
+  .line-clamp-res {
+    -webkit-line-clamp: 2;
+    line-clamp: 2 !important;
+  }
+}
+@media only screen and (min-device-width: 276px) and (-webkit-min-device-pixel-ratio: 2) {
+  .group div[class*="absolute top-2"] {
+    top: 0.17rem;
+    left: 0.17rem;
+    padding: 0.17rem !important;
+  }
+
+  .group div[class*="absolute top-2"] div {
+    gap: 0.08rem;
+  }
+
+  .group div[class*="absolute top-2"] i,
+  .group div[class*="absolute top-2"] span {
+    font-size: 0.2rem !important;
+  }
+
+  .group div[class*="absolute bottom-2"] {
+    bottom: 0.17rem;
+    left: 0.17rem;
+    right: 0.17rem;
+    padding: 0.17rem 0.34rem !important;
+  }
+
+  .group div[class*="absolute bottom-2"] span {
+    font-size: 0.27rem;
+  }
+  .line-clamp-res {
+    -webkit-line-clamp: 2;
+    line-clamp: 2 !important;
+  }
+}
+@media only screen and (min-device-width: 241px) and (-webkit-min-device-pixel-ratio: 2) {
+  .group div[class*="absolute top-2"] {
+    top: 0.17rem;
+    left: 0.17rem;
+    padding: 0.17rem !important;
+  }
+
+  .group div[class*="absolute top-2"] div {
+    gap: 0.08rem;
+  }
+
+  .group div[class*="absolute top-2"] i,
+  .group div[class*="absolute top-2"] span {
+    font-size: 0.2rem !important;
+  }
+
+  .group div[class*="absolute bottom-2"] {
+    bottom: 0.17rem;
+    left: 0.17rem;
+    right: 0.17rem;
+    padding: 0.17rem 0.34rem !important;
+  }
+
+  .group div[class*="absolute bottom-2"] span {
+    font-size: 0.27rem;
+  }
+  .line-clamp-res {
+    -webkit-line-clamp: 2;
+    line-clamp: 2 !important;
+  }
+}
+
+@media only screen and (min-device-width: 241px) and (max-device-width: 791px) and (-webkit-min-device-pixel-ratio: 2) {
+  .my-masonry-grid_column {
+    padding-left: 1px;
+    position: relative;
+    left: 7px !important;
+  }
+}
+@media only screen and (max-device-width: 791px) and (min-device-width: 549px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .my-masonry-grid_column {
+    padding-left: 1px;
+    position: relative;
+    left: -20px !important;
   }
 }
 
 /* Portrait */
-@media only screen 
-  and (max-device-width: 1180px) 
-  and (min-device-width: 820px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
+@media only screen and (max-device-width: 791px) and (min-device-width: 549px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .my-masonry-grid_column {
     padding-left: 0px;
     position: relative;
-    left: 10px!important;
+    left: 7px !important;
   }
 }
-
-
-
-
-
-
-

@@ -114,29 +114,30 @@ const ScreenHomePageTwo = () => {
   // áp dụng ai gent giống gen tất cả ảnh thành về style gliby , cùng màu rồi mới add vào tin
   // tốt cho hướng đi lâu dài của trang web và đảm bảo chất lượng ui hàng đầu về web ai agent
   const breakpointColumnsObj = {
-    default: 5,
-    1600: 4,
+    default: 4,
+    1600: 5,
+    1300: 4,
     1200: 3,
-    1100: 3,
+    1100: 2,
     900: 2,
-    700: 3,
-    896: 3,
+    700: 2,
+    896: 2,
     500: 2,
-    375: 2,
+    375: 1,
   };
 
   return (
     <div className="flex flex-col sm:flex-row min-h-screen">
       <SideBar />
-      <div className="flex-1 p-4 sm:pl-[90px] lg:pl-[100px]">
-        <div className="max-w-[1600px] mx-auto">
+      <div className="flex-1 p-[11px] sm:pl-[60px] lg:pl-[67px]">
+        <div className="max-w-[1072px] mx-auto">
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
           >
             {trendingPosts.map((post, index) => (
-              <div key={index} className="mb-2 px-1 sm:px-2">
+              <div key={index} className="mb-[5px] px-[3px] sm:px-[5px]">
                 <TrendingPost
                   imageUrl={post.imageUrl}
                   category={post.category}

@@ -4,7 +4,7 @@ const Navigation: FC = () => {
   return (
     <>
       <div>
-        <button className="text-white text-2xl ml-8  mt-7 icon">
+        <button className="text-white text-[16px] ml-[21px]  mt-[19px] icon">
           <i className="ri-menu-2-fill"></i>
         </button>
       </div>

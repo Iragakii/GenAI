@@ -11,23 +11,23 @@ const ScreenHomePageOne: FC = () => {
   return (
     <div className="flex flex-col sm:flex-row min-h-screen">
       <SideBar />
-      <div className="flex flex-col items-center justify-start px-4 pt-16 sm:pt-0 sm:justify-center min-h-screen flex-1 relative">
-        <div className="mb-1">
+      <div className="flex flex-col items-center justify-start px-[11px] pt-[43px] sm:pt-0 sm:justify-center min-h-screen flex-1 relative">
+        <div className="mb-[3px]">
           <BrandName />
         </div>
-        <div className="mb-10 sm:mb-20 text-center">
+        <div className="mb-[27px] sm:mb-[54px] text-center">
           <AiHashName />
         </div>
 
         <InputFeild />
 
-        <div className="mt-8 sm:mt-10 w-full px-2">
+        <div className="mt-[21px] sm:mt-[27px] w-full px-2">
           <NewAi />
         </div>
-        <div className="mt-10 sm:mt-20 w-full flex justify-center">
+        <div className="mt-[27px] sm:mt-[54px] w-full flex justify-center">
           <ComingAi />
         </div>
-        <div className="mt-10 sm:mt-20 w-full mb-10">
+        <div className="mt-[27px] sm:mt-[54px] w-full mb-[27px]">
           <TrendingNew />
         </div>
       </div>

@@ -7,18 +7,18 @@ const SideBar: FC = () => {
   return (
     <>
       <div
-        className="fixed w-[80px] h-screen p-5 z-20 hidden flex flex-col justify-between  lg:flex hidden-ipad"
+        className="fixed w-[54px] h-screen p-[13px] z-20 hidden flex flex-col justify-between  lg:flex hidden-ipad"
         style={{ backgroundColor: "#1A1A1A" }}
       >
         <div className="menu">
-          <div className="mb-10">
+          <div className="mb-[27px]">
             <Link
               to="#"
-              className="flex items-center justify-center leading-[40px] mb-1 relative group"
+              className="flex items-center justify-center leading-[27px] mb-1 relative group"
             >
-              <div className="icon text-[2.75rem] block text-white flex justify-center items-center">
+              <div className="icon text-[29px] block text-white flex justify-center items-center">
                 <img
-                  className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
+                  className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2] animate-scalePulse"
                   src={brandLogoMain}
                   alt="logo-company"
                 />
@@ -27,39 +27,39 @@ const SideBar: FC = () => {
           </div>
 
           <div className="">
-            <div className="mb-5.5">
+            <div className="mb-[15px]">
               <Link
                 to="#"
-                className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+                className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
               >
-                <div className="icon text-2xl block text-white flex justify-center items-center">
+                <div className="icon text-[16px] block text-white flex justify-center items-center">
                   <i className="ri-home-4-fill group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
                 </div>
               </Link>
-              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap">
+              <div className=" text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
                 Home
               </div>
             </div>
 
-            <div className="mb-5.5">
+            <div className="mb-[15px]">
               <Link
                 to="#"
-                className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+                className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
               >
-                <div className="icon text-2xl block text-white flex justify-center items-center">
+                <div className="icon text-[16px] block text-white flex justify-center items-center">
                   <i className="ri-customer-service-2-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white "></i>
                 </div>
               </Link>
-              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap">
+              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
                 Contact
               </div>
             </div>
             <div className="">
               <Link
                 to="#"
-                className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[8px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
               >
-                <div className="icon text-2xl block text-white flex justify-center items-center">
+                <div className="icon text-[16px] block text-white flex justify-center items-center">
                   <img
                     src={aboutUs}
                     alt="logo-company"
@@ -67,7 +67,7 @@ const SideBar: FC = () => {
                   />
                 </div>
               </Link>
-              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap">
+              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
                 About us
               </div>
             </div>
@@ -76,9 +76,9 @@ const SideBar: FC = () => {
         <div className="">
           <Link
             to="#"
-            className="flex items-center justify-center leading-[40px] mb-1 relative box-border rounded-[50px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+            className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[34px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
           >
-            <div className="icon text-2xl block text-white flex justify-center items-center">
+            <div className="icon text-[16px] block text-white flex justify-center items-center">
               <i className="ri-user-3-line  group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
             </div>
           </Link>
