@@ -262,49 +262,15 @@
 .dark .trending-line {
   transform: rotate(180deg);
 }
-@media (min-width: 214px) and (max-width: 514px) {
-  .ri-send-plane-line {
-    font-size: 0.5rem;
-  }
-  .ri-mic-line {
-    font-size: 1rem;
-  }
-  .ri-attachment-2 {
-    font-size: 1rem;
-  }
-  .icon-stack-container {
-    width: 63px;
-    height: 31px;
-  }
 
-  .stack-icon.youtube {
-    width: 21px;
-    height: 21px;
-  }
-  .trending-line {
-    width: 94px;
-  }
-  .left-group-animate .stack-icon.instagram {
-    left: -8px;
-  }
+.button-moved img {
+  transform: rotate(180deg) !important;
+  transition: none !important;
+}
 
-  .left-group-animate .stack-icon.twitter {
-    left: -1px;
-  }
-
-  .left-group-animate .stack-icon.threads {
-    left: 9px;
-  }
-
-  .right-group-animate .stack-icon.tiktok {
-    right: 9px;
-  }
-
-  .right-group-animate .stack-icon.wordpress {
-    right: -1px;
-  }
-
-  .right-group-animate .stack-icon.word {
-    right: -8px;
-  }
+.my-masonry-grid {
+  margin-bottom: 10px !important;
+}
+.f-postion {
+  margin-top: 10px !important;
 }

@@ -301,3 +301,58 @@
     left: 7px !important;
   }
 }
+
+/* Fix spacing for iPhone SE landscape (667px width) */
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  .my-masonry-grid_column {
+    padding-left: 6px !important;
+    margin-right: 6px !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+  }
+  .my-masonry-grid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+/* Fix spacing for Samsung Galaxy S8+ landscape (740px width) */
+@media only screen and (max-width: 740px) and (orientation: landscape) {
+  .my-masonry-grid_column {
+    padding-left: 6px !important;
+    margin-right: 6px !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+  }
+  .my-masonry-grid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+/* Fix spacing for Surface Duo landscape (720px width) */
+@media only screen and (max-width: 720px) and (orientation: landscape) {
+  .my-masonry-grid_column {
+    padding-left: 6px !important;
+    margin-right: 6px !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+  }
+  .my-masonry-grid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+/* Reduce distance between TrendingPost and TrendingNew under 450px width */
+@media (max-width: 450px) {
+  .my-masonry-grid {
+    margin-bottom: 10px !important;
+  }
+  .f-postion {
+    margin-top: 10px !important;
+  }
+}

@@ -7,7 +7,7 @@ const SideBar: FC = () => {
   return (
     <>
       <div
-        className="fixed w-[54px] h-screen p-[13px] z-20 hidden flex flex-col justify-between  lg:flex hidden-ipad"
+        className="fixed w-[54px] h-screen p-[13px] z-20 hidden flex flex-col justify-between  1350:flex hidden-ipad"
         style={{ backgroundColor: "#1A1A1A" }}
       >
         <div className="menu">

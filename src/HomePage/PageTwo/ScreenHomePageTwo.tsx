@@ -4,6 +4,7 @@ import SideBar from "../PageOne/SideBar";
 import TrendingPost from "./TrendingPost";
 import "../../styles/customHomeScreenTwo.css";
 import Masonry from "react-masonry-css";
+import "../../styles/resesPonsive.css";
 const ScreenHomePageTwo = () => {
   // Sample data with different images and content
   const trendingPosts = [
@@ -120,17 +121,26 @@ const ScreenHomePageTwo = () => {
     1200: 3,
     1100: 2,
     900: 2,
-    700: 2,
-    896: 2,
+    932: 4,
+    667: 4,
+    700: 4,
+    720: 4,
+    896: 5,
     500: 2,
-    375: 1,
+    375: 3,
+    412: 4,
+    1024: 5,
+    414: 4,
+    430: 4,
+    360: 3,
+    1180: 5,
   };
 
   return (
-    <div className="flex flex-col sm:flex-row min-h-screen">
+    <div className="flex flex-col  min-h-screen sm:justify-center sm:items-center items-center">
       <SideBar />
-      <div className="flex-1 p-[11px] sm:pl-[60px] lg:pl-[67px]">
-        <div className="max-w-[1072px] mx-auto">
+      <div className="flex-1 p-[11px] sm:pl-0 lg:pl-0">
+        <div className="max-w-[1072px] mx-auto px-[11px]">
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="my-masonry-grid"
