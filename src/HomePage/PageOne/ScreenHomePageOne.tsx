@@ -11,7 +11,7 @@ const ScreenHomePageOne: FC = () => {
   return (
     <div className="flex flex-col sm:flex-row min-h-screen">
       <SideBar />
-      <div className="flex flex-col items-center justify-start px-4 pt-16 sm:pt-0 sm:justify-center min-h-screen flex-1 relative">
+      <div className="flex flex-col items-center justify-start pt-16 sm:pt-0 sm:justify-center min-h-screen flex-1 relative max-w-[calc(100vw-80px-1rem)] mx-auto px-[calc((100vw-80px-1rem)/2)]">
         <div className="mb-1">
           <BrandName />
         </div>

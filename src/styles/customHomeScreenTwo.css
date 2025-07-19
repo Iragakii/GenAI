@@ -1,67 +1,27 @@
 .bg-trend-post {
-   background-color: #333333;  
+  background-color: #333333;
 }
 .color-text-in-trend-post {
-   color: purple;
+  color: purple;
 }
 
 .my-masonry-grid {
   display: flex;
-  margin-left: -8px;
-  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  justify-content: flex-start; /* Align content to start */
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-
-.my-masonry-grid_column {
-  padding-left: 8px;
-  background-clip: padding-box;
- 
-}
-
-
-.my-masonry-grid_column > div {
-  margin-bottom: 8px; 
-}
-
-@media screen and (min-width: 1600px) {
-  .my-masonry-grid_column {
-    position: relative;
-    left:  20px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .my-masonry-grid {
-    margin-left: -2px;
-  }
-  
-  .my-masonry-grid_column {
-    padding-left: 3px;
-  }
-  
-}
-
-@media screen and (min-width: 1024px) {
-  .my-masonry-grid {
-    padding-right: 16px; 
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .my-masonry-grid {
-    margin-left: -4px;
-  }
-  
-  .my-masonry-grid_column {
-    padding-left: 4px;
-  }
-}
-
-
-.my-masonry-grid img {
+/* New centering logic for posts */
+.move-left-res {
+  position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  left: auto !important;
+  right: auto !important;
   max-width: 100%;
-  height: auto;
-  display: block;
+  box-sizing: border-box;
 }
-
-
-
