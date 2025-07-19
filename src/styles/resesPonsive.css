@@ -11,10 +11,656 @@
 
 .my-masonry-grid_column > div {
   margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .my-masonry-grid img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Ensure image fits container properly */
+.relative.rounded-lg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.block.w-full.group {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.w-full.h-auto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* iPhone SE (320-375px) */
+@media only screen and (max-width: 375px) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 5px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    overflow: hidden;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* i SE */
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 7px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+
+@media only screen and (max-height: 380px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+
+/*  XR */
+@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 5px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 4px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 420px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* 12 */
+@media only screen and (min-width: 390px) and (max-width: 844px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 5px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 4px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 395px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* Promas */
+@media only screen and (min-width: 430px) and (max-width: 932px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 5px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 4px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 435px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* Pixel 7 */
+@media only screen and (min-width: 412px) and (max-width: 915px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 5px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 4px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 417px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* S8*/
+@media only screen and (min-width: 360px) and (max-width: 740px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 5px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 4px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 417px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* Ultra  */
+@media only screen and (min-width: 412px) and (max-width: 915px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 4.3px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 3.1px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 417px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* Ipad Mini*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 3.1px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 772px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 8px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 5px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* Ipad Air*/
+@media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 8px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 6px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+}
+
+@media only screen and (max-height: 1030px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 12px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 9px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* ipro*/
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 12px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 9px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+}
+
+@media only screen and (max-height: 1029px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 120px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 15px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/*  pr07*/
+@media only screen and (min-width: 912px) and (max-width: 1368px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 9px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 9px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+}
+
+@media only screen and (max-height: 918px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 10px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 9px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* fold */
+@media only screen and (min-width: 344px) and (max-width: 882px) and (orientation: portrait) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 6px !important;
+    line-clamp: 1 !important;
+    -webkit-line-clamp: 1 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 3px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+}
+
+@media only screen and (max-height: 349px) and (orientation: landscape) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 7px !important;
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 6px !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+  }
+}
+/* iPad Mini, Surface Duo (481-768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 9px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 10px;
+  }
+}
+
+/* iPad Air, iPad Pro 9.7" (769-834px) */
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 16px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 11px;
+  }
+}
+
+/* iPad Pro 11", Surface Pro 7 (835-1024px) */
+@media only screen and (min-width: 835px) and (max-width: 1024px) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 17px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 12px;
+  }
+}
+
+/* iPad Pro 12.9", Surface Pro 7 landscape (1025-1180px) */
+@media only screen and (min-width: 1025px) and (max-width: 1180px) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 18px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 12px;
+  }
+}
+
+/* Galaxy Z Fold 5, Asus Zenbook Fold (280-344px folded, 676-768px unfolded) */
+@media only screen and (min-width: 280px) and (max-width: 344px) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 10px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (min-width: 676px) and (max-width: 768px) {
+  .trending-title,
+  .absolute.bottom-2.left-2.right-2 span {
+    font-size: 15px;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .trending-category,
+  .absolute.top-2.left-2 .text-\[8px\],
+  .absolute.top-2.left-2 span {
+    font-size: 10px;
+  }
 }

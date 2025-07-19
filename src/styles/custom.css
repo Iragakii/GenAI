@@ -241,13 +241,11 @@
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Custom rotation for arrow button */
 .button-moved img {
   transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
 }
 
-/* Custom gradient line styling */
 .trending-line {
   width: 45px;
   height: 1px;
@@ -258,7 +256,6 @@
   stroke-opacity: 0.6;
 }
 
-/* Dark mode rotation */
 .dark .trending-line {
   transform: rotate(180deg);
 }

@@ -7,8 +7,8 @@ const SideBar: FC = () => {
   return (
     <>
       <div
-        className="fixed w-[54px] h-screen p-[13px] z-20 hidden flex flex-col justify-between  1350:flex hidden-ipad"
-        style={{ backgroundColor: "#1A1A1A" }}
+        className="fixed w-[54px] h-screen p-[13px] z-20 hidden flex-col justify-between sidebar-visible"
+        style={{ backgroundColor: "#0C0C0C" }} //#31363F  // screen responsive ipad khong bi loi , khi check tren man hinh lap sidebar can theo sc ipad nen k thay , co the doi h- de check
       >
         <div className="menu">
           <div className="mb-[27px]">
@@ -78,7 +78,7 @@ const SideBar: FC = () => {
             to="#"
             className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[34px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
           >
-            <div className="icon text-[16px] block text-white flex justify-center items-center">
+            <div className=" icon text-[16px] block text-white flex justify-center items-center">
               <i className="ri-user-3-line  group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
             </div>
           </Link>

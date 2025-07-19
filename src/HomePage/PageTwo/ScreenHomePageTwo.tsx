@@ -34,7 +34,7 @@ const ScreenHomePageTwo = () => {
         "https://i.pinimg.com/736x/48/ea/05/48ea0549b3a0985c635993ebfc698e7b.jpg",
       category: "AI Research",
       title:
-        "Study shows benefits of intermittent fasting for longevit distinct preferences when it   ",
+        "Study shows benefits of intermittent fasting for longevit distinct preferences when it came to making dinner, study suggests",
     },
     {
       imageUrl:
@@ -127,19 +127,20 @@ const ScreenHomePageTwo = () => {
     720: 4,
     896: 5,
     500: 2,
-    375: 3,
+    375: 2,
     412: 4,
     1024: 5,
-    414: 4,
-    430: 4,
+    414: 3,
+    430: 2,
     360: 3,
     1180: 5,
+    390: 3,
+    1025: 5,
   };
 
   return (
-    <div className="flex flex-col sm:flex-row">
-      <SideBar />
-      <div className="flex flex-col items-center justify-start px-[11px] pt-[43px] sm:pt-0 sm:justify-center flex-1 relative m-h min-h-screen">
+    <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col flex-1 min-h-screen custom-ipad-hehe">
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"

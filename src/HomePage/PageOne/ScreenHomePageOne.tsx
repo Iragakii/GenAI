@@ -9,9 +9,9 @@ import TrendingNew from "./TrendingNew";
 import "../../styles/resesPonsive.css";
 const ScreenHomePageOne: FC = () => {
   return (
-    <div className="flex flex-col sm:flex-row ">
+    <div className="flex flex-col sm:flex-row  ">
       <SideBar />
-      <div className="flex flex-col items-center justify-start px-[11px] pt-[43px] sm:pt-0 sm:justify-center flex-1 relative">
+      <div className="flex flex-col items-center justify-start mt-5 px-[11px] pt-[43px] sm:pt-0 sm:justify-center flex-1 relative ">
         <div className="mb-[3px]">
           <BrandName />
         </div>
