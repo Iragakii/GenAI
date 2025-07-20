@@ -1,21 +1,22 @@
 import React from "react";
 import ChatField from "./ChatField";
-
-import Navigation from "../components/Navigation";
 import SideBarChat from "./SideBarChat";
+import HeaderChatUI from "./HeaderChatUI";
 
 const ScreenChatUI = () => {
   return (
-    <div className="flex h-screen">
-      <div className="flex">
-        <div>
-          <SideBarChat />
+    <div>
+      <HeaderChatUI></HeaderChatUI>
+      <div className="flex h-screen">
+        <div className="flex">
+          <div className="">
+            <SideBarChat />
+          </div>
         </div>
-        <Navigation />
-      </div>
 
-      <div className="flex-1 overflow-auto">
-        <ChatField />
+        <div className="flex-1 overflow-auto">
+          <ChatField />
+        </div>
       </div>
     </div>
   );

@@ -84,8 +84,8 @@ export default function ChatField() {
       <div className="flex-1 overflow-y-auto">
         <div className="max-w-[727px] mx-auto px-3 py-4 space-y-3">
           {messages.length === 0 ? (
-            <div className="text-center text-gray-400 py-8">
-              No messages yet. Start typing to begin your conversation.
+            <div className="text-center text-gray-white py-8 text-xl font-bold">
+              Xin chào , tôi có thể giúp gì cho bạn ?
             </div>
           ) : (
             messages.map((msg) => (

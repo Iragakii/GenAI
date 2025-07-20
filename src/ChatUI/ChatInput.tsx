@@ -127,7 +127,7 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
         onDrop={handleDrop}
       >
         {previewUrls.length > 0 && (
-          <div className="flex flex-wrap gap-2 border-l border-gray-600 pl-3 ml-[-8px]">
+          <div className="flex flex-wrap gap-2  pl-3 ml-[-8px]">
             {previewUrls.map((url, index) => (
               <div key={index} className="relative w-[80px] h-[60px]">
                 <img
@@ -138,7 +138,7 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
                 <button
                   type="button"
                   onClick={() => handleRemoveImage(index)}
-                  className="absolute -right-2 -top-2 bg-gray-700 rounded-full p-1 hover:bg-gray-600 transition-colors"
+                  className="absolute -right-2 -top-2 bg-gray-700 rounded-full p-1 py-0  hover:bg-gray-600 transition-colors"
                 >
                   <i className="ri-close-line text-xs"></i>
                 </button>
