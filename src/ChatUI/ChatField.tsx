@@ -7,7 +7,7 @@ interface Message {
   id: number;
   role: "user" | "ai";
   content: string;
-  imagesBase64?: string[]; // Array of images for a single message
+  imagesBase64?: string[];
 }
 
 const fileToBase64 = (file: File): Promise<string> => {
@@ -64,7 +64,6 @@ export default function ChatField() {
     };
 
     if (images && images.length > 0) {
-      // Convert all images to base64 and store in array
       const base64Images = await Promise.all(images.map(fileToBase64));
       newMessage.imagesBase64 = base64Images;
     }
@@ -103,7 +102,6 @@ export default function ChatField() {
                     msg.role === "user" ? "items-end" : "items-start"
                   )}
                 >
-                  {/* Text message with background color */}
                   {msg.content && (
                     <div
                       className={clsx(
@@ -117,7 +115,6 @@ export default function ChatField() {
                     </div>
                   )}
 
-                  {/* Images container - grouped together without background */}
                   {msg.imagesBase64 && msg.imagesBase64.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {msg.imagesBase64.map((image, index) => (

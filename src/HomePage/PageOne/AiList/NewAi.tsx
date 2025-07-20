@@ -5,7 +5,6 @@ const NewAi = () => {
   return (
     <div className="w-full max-w-6xl mx-auto px-4">
       <div className="flex flex-wrap justify-center gap-[11px] sm:gap-[21px] md:gap-[32px]">
-        {/* Research Agent */}
         <Link
           to="#"
           className="flex flex-col items-center gap-[5px] w-[calc(50%-1rem)] sm:w-auto group"
@@ -18,7 +17,6 @@ const NewAi = () => {
           </span>
         </Link>
 
-        {/* Facebook Agent */}
         <Link
           to="#"
           className="flex flex-col items-center gap-[5px] w-[calc(50%-1rem)] sm:w-auto group"
@@ -31,7 +29,6 @@ const NewAi = () => {
           </span>
         </Link>
 
-        {/* Image AI Tool */}
         <Link
           to="#"
           className="flex flex-col items-center gap-[5px] w-[calc(50%-1rem)] sm:w-auto group"
@@ -44,7 +41,6 @@ const NewAi = () => {
           </span>
         </Link>
 
-        {/* Short Video AI */}
         <Link
           to="#"
           className="flex flex-col items-center gap-[5px] w-[calc(50%-1rem)] sm:w-auto group"

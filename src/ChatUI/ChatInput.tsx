@@ -84,7 +84,6 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
     setPreviewUrls(newPreviewUrls);
   };
 
-  // Drag and drop handlers
   const handleDragEnter = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     e.stopPropagation();
