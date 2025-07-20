@@ -5,16 +5,13 @@ import HeaderChatUI from "./HeaderChatUI";
 
 const ScreenChatUI = () => {
   return (
-    <div>
-      <HeaderChatUI></HeaderChatUI>
-      <div className="flex h-screen">
-        <div className="flex">
-          <div className="">
-            <SideBarChat />
-          </div>
-        </div>
+    <div className="h-screen w-screen bg-black text-white relative overflow-hidden">
+      <SideBarChat />
 
-        <div className="flex-1 overflow-auto">
+      <div className="pl-0 lg:pl-[54px] h-full flex flex-col relative">
+        <HeaderChatUI />
+
+        <div className="flex-1 overflow-hidden">
           <ChatField />
         </div>
       </div>

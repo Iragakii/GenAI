@@ -5,90 +5,88 @@ const brandLogoMain = "/brand-logo-main.png";
 const aboutUs = "/about-us.png";
 const SideBarChat: FC = () => {
   return (
-    <>
-      <div
-        className="w-[54px] h-full p-[13px] flex flex-col z-20 hidden flex-col sidebar-visible"
-        style={{ backgroundColor: "#0C0C0C" }}
-      >
-        <div className="flex flex-col h-full">
-          <div className="flex-1">
-            <div className="mb-[27px]">
-              <Link
-                to="#"
-                className="flex items-center justify-center leading-[27px] mb-1 relative group"
-              >
-                <div className="icon text-[29px] block text-white flex justify-center items-center">
-                  <img
-                    className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2] animate-scalePulse"
-                    src={brandLogoMain}
-                    alt="logo-company"
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <div>
-              <div className="mb-[15px]">
-                <Link
-                  to="#"
-                  className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
-                >
-                  <div className="icon text-[16px] block text-white flex justify-center items-center">
-                    <i className="ri-home-4-fill group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
-                  </div>
-                </Link>
-                <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
-                  Home
-                </div>
-              </div>
-
-              <div className="mb-[15px]">
-                <Link
-                  to="#"
-                  className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
-                >
-                  <div className="icon text-[16px] block text-white flex justify-center items-center">
-                    <i className="ri-customer-service-2-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white "></i>
-                  </div>
-                </Link>
-                <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
-                  Contact
-                </div>
-              </div>
-
-              <div>
-                <Link
-                  to="#"
-                  className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
-                >
-                  <div className="icon text-[16px] block text-white flex justify-center items-center">
-                    <img
-                      src={aboutUs}
-                      alt="logo-company"
-                      className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
-                    />
-                  </div>
-                </Link>
-                <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
-                  About us
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-auto">
+    <div
+      className="fixed left-0 top-0 h-full w-[54px] p-[13px] flex flex-col z-20 hidden sidebar-visible"
+      style={{ backgroundColor: "#0C0C0C" }}
+    >
+      <div className="flex flex-col h-full">
+        <div className="flex-1">
+          <div className="mb-[27px]">
             <Link
               to="#"
-              className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[34px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+              className="flex items-center justify-center leading-[27px] mb-1 relative group"
             >
-              <div className="icon text-[16px] block text-white flex justify-center items-center">
-                <i className="ri-user-3-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
+              <div className="icon text-[29px] block text-white flex justify-center items-center">
+                <img
+                  className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2] animate-scalePulse"
+                  src={brandLogoMain}
+                  alt="logo-company"
+                />
               </div>
             </Link>
           </div>
+
+          <div>
+            <div className="mb-[15px]">
+              <Link
+                to="#"
+                className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
+              >
+                <div className="icon text-[16px] block text-white flex justify-center items-center">
+                  <i className="ri-home-4-fill group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
+                </div>
+              </Link>
+              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
+                Home
+              </div>
+            </div>
+
+            <div className="mb-[15px]">
+              <Link
+                to="#"
+                className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
+              >
+                <div className="icon text-[16px] block text-white flex justify-center items-center">
+                  <i className="ri-customer-service-2-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white "></i>
+                </div>
+              </Link>
+              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
+                Contact
+              </div>
+            </div>
+
+            <div>
+              <Link
+                to="#"
+                className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
+              >
+                <div className="icon text-[16px] block text-white flex justify-center items-center">
+                  <img
+                    src={aboutUs}
+                    alt="logo-company"
+                    className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
+                  />
+                </div>
+              </Link>
+              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
+                About us
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-auto">
+          <Link
+            to="#"
+            className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[34px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+          >
+            <div className="icon text-[16px] block text-white flex justify-center items-center">
+              <i className="ri-user-3-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
+            </div>
+          </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

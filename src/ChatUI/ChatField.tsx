@@ -80,12 +80,13 @@ export default function ChatField() {
   }, [messages]);
 
   return (
-    <div className="flex flex-col h-screen bg-black text-white overflow-hidden">
-      <div className="flex-1 overflow-y-auto">
-        <div className="max-w-[727px] mx-auto px-3 py-4 space-y-3">
+    <div className="flex flex-col h-full bg-black text-white">
+      <div className="flex-1 overflow-y-auto pt-16 pb-20">
+        {" "}
+        <div className="max-w-[660px] mx-auto px-3 py-4 space-y-3">
           {messages.length === 0 ? (
-            <div className="text-center text-gray-white py-8 text-xl font-bold">
-              Xin chào , tôi có thể giúp gì cho bạn ?
+            <div className="text-center text-white py-15 text-xl font-bold">
+              Xin chào, tôi có thể giúp gì cho bạn?
             </div>
           ) : (
             messages.map((msg) => (
@@ -136,8 +137,8 @@ export default function ChatField() {
         </div>
       </div>
 
-      <div className="w-full px-3 py-3 bg-black">
-        <div className="max-w-[730px] mx-auto">
+      <div className="fixed bottom-0 left-0 right-0 bg-black py-3">
+        <div className="max-w-[730px] mx-auto px-3">
           <ChatInput onSendMessage={handleSendMessage} />
         </div>
       </div>
