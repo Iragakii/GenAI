@@ -61,7 +61,7 @@ export default function ChatField() {
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 w-full px-3 py-3 bg-black border-t border-gray-800">
+      <div className="fixed bottom-0 left-0 right-0 w-full px-3 py-3 bg-black">
         <div className="max-w-[730px] mx-auto">
           <InputFeild></InputFeild>
         </div>

@@ -1,10 +1,16 @@
 import React from "react";
 import ChatField from "./ChatField";
+import SideBar from "../HomePage/PageOne/SideBar";
 
 const ScreenChatUI = () => {
   return (
     <>
-      <ChatField></ChatField>
+      <div className="">
+        <SideBar></SideBar>
+        <div className="">
+          <ChatField></ChatField>
+        </div>
+      </div>
     </>
   );
 };
