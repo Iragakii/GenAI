@@ -22,7 +22,6 @@
   display: block;
 }
 
-/* Ensure image fits container properly */
 .relative.rounded-lg {
   position: relative;
   width: 100%;

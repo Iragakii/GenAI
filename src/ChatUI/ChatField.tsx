@@ -7,7 +7,7 @@ interface Message {
   id: number;
   role: "user" | "ai";
   content: string;
-  imageBase64?: string;
+  imagesBase64?: string[]; // Array of images for a single message
 }
 
 const fileToBase64 = (file: File): Promise<string> => {
@@ -25,7 +25,6 @@ export default function ChatField() {
   const navigate = useNavigate();
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // ✅ Load messages and process ?message= from homepage
   useEffect(() => {
     const stored = localStorage.getItem("chat-messages");
     let parsed: Message[] = stored ? JSON.parse(stored) : [];
@@ -57,20 +56,19 @@ export default function ChatField() {
     }
   }, []);
 
-  // ✅ Handle user sending new message or image
-  const handleSendMessage = async (message: string, image?: File) => {
+  const handleSendMessage = async (message: string, images?: File[]) => {
     const newMessage: Message = {
       id: Date.now(),
       role: "user",
       content: message,
     };
 
-    if (image) {
-      const base64 = await fileToBase64(image);
-      newMessage.imageBase64 = base64;
+    if (images && images.length > 0) {
+      // Convert all images to base64 and store in array
+      const base64Images = await Promise.all(images.map(fileToBase64));
+      newMessage.imagesBase64 = base64Images;
     }
 
-    // Ensure immediate state update and persistence
     setMessages((prev) => {
       const updatedMessages = [...prev, newMessage];
       localStorage.setItem("chat-messages", JSON.stringify(updatedMessages));
@@ -78,15 +76,14 @@ export default function ChatField() {
     });
   };
 
-  // ✅ Auto scroll
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
-      <div className="flex-1 overflow-y-auto py-4 pb-20 scrollbar-hide chat-scrollbar">
-        <div className="max-w-[727px] mx-auto px-3 space-y-3">
+    <div className="flex flex-col h-screen bg-black text-white overflow-hidden">
+      <div className="flex-1 overflow-y-auto">
+        <div className="max-w-[727px] mx-auto px-3 py-4 space-y-3">
           {messages.length === 0 ? (
             <div className="text-center text-gray-400 py-8">
               No messages yet. Start typing to begin your conversation.
@@ -102,25 +99,38 @@ export default function ChatField() {
               >
                 <div
                   className={clsx(
-                    "flex gap-2 items-start max-w-[85%] sm:max-w-[700px]",
-                    msg.role === "user" ? "flex-row-reverse" : "flex-row"
+                    "flex flex-col gap-1 max-w-[85%] sm:max-w-[700px]",
+                    msg.role === "user" ? "items-end" : "items-start"
                   )}
                 >
-                  <div
-                    className={clsx("px-3 py-2 rounded-lg text-sm", {
-                      " text-gray-200": msg.role === "ai",
-                      "bg-[#4C585B] text-white": msg.role === "user",
-                    })}
-                  >
-                    {msg.content}
-                    {msg.imageBase64 && (
-                      <img
-                        src={msg.imageBase64}
-                        alt="uploaded"
-                        className="mt-2 rounded-lg max-w-[200px]"
-                      />
-                    )}
-                  </div>
+                  {/* Text message with background color */}
+                  {msg.content && (
+                    <div
+                      className={clsx(
+                        "px-4 py-2 rounded-lg text-sm break-words max-w-full",
+                        msg.role === "ai"
+                          ? "bg-gray-700 text-gray-200"
+                          : "bg-[#4C585B] text-white"
+                      )}
+                    >
+                      {msg.content}
+                    </div>
+                  )}
+
+                  {/* Images container - grouped together without background */}
+                  {msg.imagesBase64 && msg.imagesBase64.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {msg.imagesBase64.map((image, index) => (
+                        <div key={index} className="rounded-lg overflow-hidden">
+                          <img
+                            src={image}
+                            alt={`uploaded-${index}`}
+                            className="max-h-[200px] max-w-full object-contain"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))
@@ -129,7 +139,7 @@ export default function ChatField() {
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 w-full px-3 py-3 bg-black">
+      <div className="w-full px-3 py-3 bg-black">
         <div className="max-w-[730px] mx-auto">
           <ChatInput onSendMessage={handleSendMessage} />
         </div>
