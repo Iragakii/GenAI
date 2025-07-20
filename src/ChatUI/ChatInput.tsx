@@ -1,29 +1,34 @@
-import React, { useState, FC, ChangeEvent, FormEvent } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, FC, ChangeEvent, FormEvent, useRef } from "react";
 
-interface InputFeildProps {
-  onSendMessage?: (message: string) => void;
+interface ChatInputProps {
+  onSendMessage: (message: string, image?: File) => void;
 }
 
-const InputFeild: FC<InputFeildProps> = ({ onSendMessage }) => {
+const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
   const [input, setInput] = useState<string>("");
-  const navigate = useNavigate();
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const trimmedInput = input.trim();
-    if (trimmedInput !== "") {
-      if (onSendMessage) {
-        onSendMessage(trimmedInput);
-      } else {
-        navigate(`/chat?message=${encodeURIComponent(trimmedInput)}`);
-      }
+    if (input.trim() !== "") {
+      onSendMessage(input.trim());
       setInput("");
     }
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
+  };
+
+  const handleFileClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      onSendMessage("", file);
+    }
   };
 
   return (
@@ -37,12 +42,21 @@ const InputFeild: FC<InputFeildProps> = ({ onSendMessage }) => {
             type="text"
             value={input}
             onChange={handleChange}
-            placeholder="Hỏi bất cứ điều gì"
-            className="w-full px-2 sm:px-[11px] py-1 sm:py-[5px] text-input-field focus:outline-none focus:ring-0 text-sm sm:text-[16px] bg-transparent"
+            placeholder="Type your message..."
+            className="w-full px-2 sm:px-[11px] py-1 sm:py-[5px] text-input-field focus:outline-none focus:ring-0 text-sm sm:text-[16px]"
           />
+
           <div className="flex items-center gap-2 sm:gap-[11px] mt-2 sm:mt-[24px] mr-1 sm:mr-[5px] justify-end">
+            <input
+              type="file"
+              accept="image/*"
+              ref={fileInputRef}
+              onChange={handleFileChange}
+              className="hidden"
+            />
             <button
               type="button"
+              onClick={handleFileClick}
               className="text-white hover:text-gray-300 transition-colors cursor-pointer"
             >
               <i className="ri-attachment-2 text-sm sm:text-[16px]"></i>
@@ -71,4 +85,4 @@ const InputFeild: FC<InputFeildProps> = ({ onSendMessage }) => {
   );
 };
 
-export default InputFeild;
+export default ChatInput;

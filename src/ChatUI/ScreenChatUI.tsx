@@ -6,9 +6,9 @@ const ScreenChatUI = () => {
   return (
     <>
       <div className="">
-        <SideBar></SideBar>
+        <SideBar />
         <div className="">
-          <ChatField></ChatField>
+          <ChatField />
         </div>
       </div>
     </>
