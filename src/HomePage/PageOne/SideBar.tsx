@@ -1,10 +1,20 @@
-import React, { FC } from "react";
+// SideBar.tsx
+import React, { FC, useState } from "react";
 import { Link } from "react-router-dom";
+import NotLoginForm from "../../components/NotLoginForm";
+
 const homeIconSide = "/icon-home-side.png";
 const brandLogoMain = "/brand-logo-main.png";
 const contactIconSide = "/icon-contact-side.png";
 const aboutIconSide = "/icon-about-side.png";
+
 const SideBar: FC = () => {
+  const [showForm, setShowForm] = useState(false);
+
+  const toggleForm = () => {
+    setShowForm(!showForm);
+  };
+
   return (
     <>
       <div
@@ -86,17 +96,20 @@ const SideBar: FC = () => {
           </div>
 
           <div className="mt-auto">
-            <Link
-              to="#"
-              className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[34px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out pt-1 pb-1"
+            <button
+              type="button"
+              onClick={toggleForm}
+              className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[34px] group bg-[#DB2777] hover:scale-105 transition-transform duration-300 ease-in-out   px-1"
             >
               <div className="icon text-[16px] block text-white flex justify-center items-center">
                 <i className="ri-user-3-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
               </div>
-            </Link>
+            </button>
           </div>
         </div>
       </div>
+
+      {showForm && <NotLoginForm />}
     </>
   );
 };

@@ -7,6 +7,10 @@ module.exports = {
         "custom-purple": "#D69ADE",
         "gradient-start": "#EC4899",
         "gradient-end": "#153885",
+        "sidebar-bg": "#0C0C0C",
+        "sidebar-hover": "#313131",
+        "sidebar-pink": "#DB2777",
+        "form-bg": "#1E1E1E",
       },
       textShadow: {
         glow: "0 0 8px #FFDFEF",
@@ -29,7 +33,26 @@ module.exports = {
         "zenbook-fold": "1920px",
         1350: "1350px",
       },
+      animation: {
+        slideRight: "slideRight 0.3s ease-out forwards",
+        scalePulse: "scalePulse 2s infinite",
+      },
+      keyframes: {
+        slideRight: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        scalePulse: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+      },
     },
   },
-  plugins: [require("tailwindcss-textshadow")],
+  plugins: [
+    require("tailwindcss-textshadow"),
+    function ({ addVariant }) {
+      addVariant("sidebar-visible", "&.sidebar-visible");
+    },
+  ],
 };
