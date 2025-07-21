@@ -114,7 +114,7 @@ const ScreenHomePageTwo = () => {
   const breakpointColumnsObj = {
     default: 4,
     1600: 5,
-    1300: 4,
+    1300: 5,
     1200: 3,
     1100: 2,
     900: 2,

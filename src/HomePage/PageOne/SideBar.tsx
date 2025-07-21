@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-
+const homeIconSide = "/icon-home-side.png";
 const brandLogoMain = "/brand-logo-main.png";
-const aboutUs = "/about-us.png";
+const contactIconSide = "/icon-contact-side.png";
+const aboutIconSide = "/icon-about-side.png";
 const SideBar: FC = () => {
   return (
     <>
@@ -31,10 +32,14 @@ const SideBar: FC = () => {
               <div className="mb-[15px]">
                 <Link
                   to="#"
-                  className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
+                  className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
                 >
                   <div className="icon text-[16px] block text-white flex justify-center items-center">
-                    <i className="ri-home-4-fill group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"></i>
+                    <img
+                      className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1]"
+                      src={homeIconSide}
+                      alt="iconHome"
+                    />
                   </div>
                 </Link>
                 <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
@@ -48,7 +53,11 @@ const SideBar: FC = () => {
                   className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
                 >
                   <div className="icon text-[16px] block text-white flex justify-center items-center">
-                    <i className="ri-customer-service-2-line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white "></i>
+                    <img
+                      className="line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"
+                      src={contactIconSide}
+                      alt="iconHome"
+                    />
                   </div>
                 </Link>
                 <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
@@ -59,13 +68,13 @@ const SideBar: FC = () => {
               <div>
                 <Link
                   to="#"
-                  className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
+                  className="flex items-center justify-center py-1 leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
                 >
-                  <div className="icon text-[16px] block text-white flex justify-center items-center">
+                  <div className="icon  block text-white flex justify-center items-center">
                     <img
-                      src={aboutUs}
+                      src={aboutIconSide}
                       alt="logo-company"
-                      className="transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
+                      className="w-5 h-5 transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
                     />
                   </div>
                 </Link>

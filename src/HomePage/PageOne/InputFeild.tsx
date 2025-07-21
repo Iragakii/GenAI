@@ -57,7 +57,7 @@ const InputFeild: FC<InputFeildProps> = ({ onSendMessage }) => {
               type="submit"
               className={`flex text-white items-center justify-center leading-5 sm:leading-[27px] p-1 sm:p-[8px] py-1 sm:py-[5px] relative box-border rounded-[3px] sm:rounded-[5px] group ${
                 input.trim() === ""
-                  ? "bg-[#C89595] cursor-not-allowed"
+                  ? "bg-[#FFFFFF0D] cursor-not-allowed"
                   : "bg-submit-input hover:scale-105 cursor-pointer"
               } transition-all duration-300 ease-in-out outline-none focus:ring-2 focus:ring-pink-400`}
               disabled={input.trim() === ""}
