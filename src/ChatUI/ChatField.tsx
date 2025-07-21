@@ -80,6 +80,37 @@ export default function ChatField() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  const renderImageGroups = (images: string[]) => {
+    const containerWidth = 660;
+    const minImageWidth = 200;
+    const gap = 8;
+
+    const imagesPerRow = Math.floor(containerWidth / (minImageWidth + gap));
+    const rowCount = Math.ceil(images.length / imagesPerRow);
+
+    const groups = [];
+    for (let i = 0; i < rowCount; i++) {
+      groups.push(images.slice(i * imagesPerRow, (i + 1) * imagesPerRow));
+    }
+
+    return groups.map((group, groupIndex) => (
+      <div key={groupIndex} className="flex gap-2 mb-2">
+        {group.map((image, index) => (
+          <div
+            key={index}
+            className="flex-1 min-w-[200px] max-w-[calc(33.333%-8px)]"
+          >
+            <img
+              src={image}
+              alt={`uploaded-${groupIndex * imagesPerRow + index}`}
+              className="w-full h-auto max-h-[200px] object-cover rounded-lg"
+            />
+          </div>
+        ))}
+      </div>
+    ));
+  };
+
   return (
     <div className="flex flex-col h-full bg-black text-white">
       <div
@@ -126,11 +157,14 @@ export default function ChatField() {
                   {msg.imagesBase64 && msg.imagesBase64.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {msg.imagesBase64.map((image, index) => (
-                        <div key={index} className="rounded-lg overflow-hidden">
+                        <div
+                          key={index}
+                          className="w-[120px] h-[90px] overflow-hidden rounded-lg"
+                        >
                           <img
                             src={image}
                             alt={`uploaded-${index}`}
-                            className="max-h-[200px] max-w-full object-contain"
+                            className="w-full h-full object-cover"
                           />
                         </div>
                       ))}
@@ -145,7 +179,7 @@ export default function ChatField() {
       </div>
 
       <div
-        className="fixed bottom-0 left-0 right-0 bg-black "
+        className="fixed bottom-0 left-0 right-0 bg-black"
         style={{ height: "120px" }}
       >
         <div className="max-w-[730px] mx-auto px-3 py-2 h-full flex items-center">
