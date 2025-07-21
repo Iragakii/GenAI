@@ -37,8 +37,8 @@ const SideBarChat: FC = () => {
               </Link>
             </div>
 
-            <div>
-              <div className="mb-[15px]">
+            <div className="">
+              <div className="mb-[20px] mt-[35px]">
                 <Link
                   to="#"
                   className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
@@ -56,7 +56,7 @@ const SideBarChat: FC = () => {
                 </div>
               </div>
 
-              <div className="mb-[15px]">
+              <div className="mb-[20px]">
                 <Link
                   to="#"
                   className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
@@ -64,26 +64,8 @@ const SideBarChat: FC = () => {
                   <div className="icon text-[16px] block text-white flex justify-center items-center">
                     <img
                       className="line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"
-                      src={contactIconSide}
-                      alt="iconHome"
-                    />
-                  </div>
-                </Link>
-                <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
-                  Contact
-                </div>
-              </div>
-
-              <div>
-                <Link
-                  to="#"
-                  className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
-                >
-                  <div className="icon text-[16px] block text-white flex justify-center items-center">
-                    <img
                       src={aboutIconSide}
-                      alt="logo-company"
-                      className="w-5 h-5 transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
+                      alt="iconHome"
                     />
                   </div>
                 </Link>
@@ -91,6 +73,27 @@ const SideBarChat: FC = () => {
                   About us
                 </div>
               </div>
+
+              <div>
+                <Link
+                  to="#"
+                  className="flex items-center py-1 justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group hover:bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out"
+                >
+                  <div className="icon block text-white flex justify-center items-center">
+                    <img
+                      src={contactIconSide}
+                      alt="logo-company"
+                      className="w-5 h-5 transform transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
+                    />
+                  </div>
+                </Link>
+                <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
+                  Contact
+                </div>
+              </div>
+            </div>
+            <div className="text-gray-500 dark:text-gray-400 ">
+              <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-300 w-9 " />
             </div>
           </div>
 

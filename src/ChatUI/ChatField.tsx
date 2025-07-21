@@ -94,7 +94,7 @@ export default function ChatField() {
     }
 
     return groups.map((group, groupIndex) => (
-      <div key={groupIndex} className="flex gap-2 mb-2">
+      <div key={groupIndex} className="flex gap-2 mb-2 h-screen">
         {group.map((image, index) => (
           <div
             key={index}

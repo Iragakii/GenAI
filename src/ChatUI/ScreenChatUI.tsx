@@ -5,7 +5,7 @@ import HeaderChatUI from "./HeaderChatUI";
 
 const ScreenChatUI = () => {
   return (
-    <div className="h-screen w-screen bg-black text-white relative overflow-hidden">
+    <div className=" w-screen bg-black text-white relative overflow-hidden">
       <SideBarChat />
 
       <div className="pl-0 lg:pl-[54px] h-full flex flex-col relative">

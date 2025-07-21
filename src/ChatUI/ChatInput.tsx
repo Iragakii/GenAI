@@ -115,7 +115,7 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" w-full max-w-[700px] mx-auto px-0"
+      className=" w-full max-w-[700px] mx-auto px-0 "
     >
       <div
         ref={dropAreaRef}
