@@ -30,7 +30,7 @@ const InputFeild: FC<InputFeildProps> = ({ onSendMessage }) => {
     <form onSubmit={handleSubmit} className="w-full max-w-[700px] mx-auto px-0">
       <div className="flex flex-col gap-2 sm:gap-[11px]">
         <div
-          className="flex flex-col p-2 sm:p-[8px] border rounded-lg sm:rounded-[21px] w-full min-h-[36px] sm:min-h-[50px] border-input-field-color"
+          className="flex flex-col p-2 sm:p-[8px] border rounded-[25px] w-full min-h-[36px] sm:min-h-[50px] border-input-field-color"
           style={{ backgroundColor: "#313131" }}
         >
           <input
@@ -55,7 +55,7 @@ const InputFeild: FC<InputFeildProps> = ({ onSendMessage }) => {
             </button>
             <button
               type="submit"
-              className={`flex text-white items-center justify-center leading-5 sm:leading-[27px] p-1 sm:p-[8px] py-1 sm:py-[5px] relative box-border rounded-[3px] sm:rounded-[5px] group ${
+              className={`flex text-white items-center justify-center leading-5 sm:leading-[27px] p-1 sm:p-[8px] py-1 sm:py-[5px] relative box-border rounded-[9px]  group ${
                 input.trim() === ""
                   ? "bg-[#FFFFFF0D] cursor-not-allowed"
                   : "bg-submit-input hover:scale-105 cursor-pointer"

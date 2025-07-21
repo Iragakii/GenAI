@@ -113,7 +113,10 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-[700px] mx-auto px-0">
+    <form
+      onSubmit={handleSubmit}
+      className=" w-full max-w-[700px] mx-auto px-0"
+    >
       <div
         ref={dropAreaRef}
         className={`flex flex-col gap-2 sm:gap-[11px] ${
@@ -127,9 +130,9 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
         onDrop={handleDrop}
       >
         {previewUrls.length > 0 && (
-          <div className="flex flex-wrap gap-2  pl-3 ml-[-8px]">
+          <div className="flex flex-wrap gap-2  pl-3 ml-[-8px] ">
             {previewUrls.map((url, index) => (
-              <div key={index} className="relative w-[80px] h-[60px]">
+              <div key={index} className="relative w-[75px] h-[45px]">
                 <img
                   src={url}
                   alt={`Preview ${index}`}
@@ -155,7 +158,7 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
         )}
 
         <div
-          className={`flex flex-col p-2 sm:p-[8px] border rounded-lg sm:rounded-[21px] w-full min-h-[36px] sm:min-h-[50px] max-h-[120px] overflow-y-auto border-input-field-color ${
+          className={`mb-12  flex flex-col p-2 sm:p-[8px] border rounded-[22px]  w-full min-h-[36px] sm:min-h-[50px] max-h-[120px] overflow-y-auto border-input-field-color ${
             isDragging ? "border-blue-400" : ""
           }`}
           style={{ backgroundColor: "#313131" }}
@@ -166,10 +169,10 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
             onChange={handleChange}
             placeholder={
               selectedImages.length > 0
-                ? "Add a caption..."
+                ? "Thêm miêu tả chi tiết ..."
                 : isDragging
-                ? "Drop images here..."
-                : "Type your message..."
+                ? "Kéo thả ảnh ..."
+                : "Bạn có thể hỏi bất cứ điều gì ..."
             }
             className="w-full px-2 sm:px-[11px] py-1 sm:py-[5px] text-input-field focus:outline-none focus:ring-0 text-sm sm:text-[16px] bg-transparent"
             maxLength={1000}
@@ -203,9 +206,9 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
             </button>
             <button
               type="submit"
-              className={`flex text-white items-center justify-center leading-5 sm:leading-[27px] p-1 sm:p-[8px] py-1 sm:py-[5px] relative box-border rounded-[3px] sm:rounded-[5px] group ${
+              className={`flex text-white items-center justify-center leading-5 sm:leading-[27px] p-1 sm:p-[8px] py-1 sm:py-[5px] relative box-border rounded-[9px] group ${
                 input.trim() === "" && selectedImages.length === 0
-                  ? "bg-[#C89595] cursor-not-allowed"
+                  ? "bg-[#FFFFFF0D] cursor-not-allowed"
                   : "bg-submit-input hover:scale-105 cursor-pointer"
               } transition-all duration-300 ease-in-out outline-none focus:ring-2 focus:ring-pink-400`}
               disabled={input.trim() === "" && selectedImages.length === 0}

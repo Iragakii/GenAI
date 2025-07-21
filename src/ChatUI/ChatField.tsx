@@ -24,6 +24,7 @@ export default function ChatField() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const [hasImagePreviews] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("chat-messages");
@@ -81,9 +82,15 @@ export default function ChatField() {
 
   return (
     <div className="flex flex-col h-full bg-black text-white">
-      <div className="flex-1 overflow-y-auto pt-16 pb-20">
-        {" "}
-        <div className="max-w-[660px] mx-auto px-3 py-4 space-y-3">
+      <div
+        className="overflow-y-auto pt-16 messages-container"
+        style={{
+          height: hasImagePreviews
+            ? "calc(100vh - 270px)"
+            : "calc(100vh - 200px)",
+        }}
+      >
+        <div className="max-w-[660px] mx-auto px-3 py-4 space-y-3 pb-4">
           {messages.length === 0 ? (
             <div className="text-center text-white py-15 text-xl font-bold">
               Xin chào, tôi có thể giúp gì cho bạn?
@@ -137,8 +144,11 @@ export default function ChatField() {
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 bg-black py-3">
-        <div className="max-w-[730px] mx-auto px-3">
+      <div
+        className="fixed bottom-0 left-0 right-0 bg-black "
+        style={{ height: "120px" }}
+      >
+        <div className="max-w-[730px] mx-auto px-3 py-2 h-full flex items-center">
           <ChatInput onSendMessage={handleSendMessage} />
         </div>
       </div>

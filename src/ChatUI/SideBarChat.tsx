@@ -24,7 +24,7 @@ const SideBarChat: FC = () => {
           <div className="flex-1">
             <div className="mb-[27px]">
               <Link
-                to="#"
+                to="http://localhost:5173/"
                 className="flex items-center justify-center leading-[27px] mb-1 relative group"
               >
                 <div className="icon text-[29px] block text-white flex justify-center items-center">
