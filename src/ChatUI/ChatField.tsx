@@ -112,13 +112,14 @@ export default function ChatField() {
   };
 
   return (
-    <div className="flex flex-col h-full bg-black text-white">
+    <div className="flex flex-col h-full text-white">
       <div
         className="overflow-y-auto pt-16 messages-container"
         style={{
           height: hasImagePreviews
             ? "calc(100vh - 270px)"
             : "calc(100vh - 200px)",
+          backgroundColor: "#1f1f1f",
         }}
       >
         <div className="max-w-[660px] mx-auto px-3 py-4 space-y-3 pb-4">
@@ -179,7 +180,7 @@ export default function ChatField() {
       </div>
 
       <div
-        className="fixed bottom-0 left-0 right-0 bg-black"
+        className="fixed bottom-0 left-0 right-0 "
         style={{ height: "120px" }}
       >
         <div className="max-w-[730px] mx-auto px-3 py-2 h-full flex items-center">

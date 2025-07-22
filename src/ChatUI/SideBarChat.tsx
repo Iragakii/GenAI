@@ -20,7 +20,7 @@ const SideBarChat: FC = () => {
     <>
       <div
         className="fixed left-0 top-0 h-full w-[54px] p-[13px] flex flex-col z-20 hidden sidebar-visible"
-        style={{ backgroundColor: "#0C0C0C" }}
+        style={{ backgroundColor: "#1D1D1D" }}
       >
         <div className="flex flex-col h-full">
           <div className="flex-1">
