@@ -6,11 +6,12 @@ import React, {
   useRef,
   useEffect,
 } from "react";
+import PickTool from "../components/pickTool";
 
 interface ChatInputProps {
   onSendMessage: (message: string, images?: File[]) => void;
 }
-const ideaIconSide = "/icon-idea.png";
+
 const toolsIconSide = "/icon-tools.png";
 const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
   const [input, setInput] = useState<string>("");
@@ -25,6 +26,36 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
       previewUrls.forEach((url) => URL.revokeObjectURL(url));
     };
   }, [previewUrls]);
+
+  useEffect(() => {
+    const handlePaste = (e: ClipboardEvent) => {
+      const items = e.clipboardData?.items;
+      if (!items) return;
+
+      const files: File[] = [];
+
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        if (item.type.startsWith("image/")) {
+          const file = item.getAsFile();
+          if (file) {
+            files.push(file);
+          }
+        }
+      }
+
+      if (files.length > 0) {
+        e.preventDefault();
+        processFiles(files);
+      }
+    };
+
+    document.addEventListener("paste", handlePaste);
+
+    return () => {
+      document.removeEventListener("paste", handlePaste);
+    };
+  }, [selectedImages.length, previewUrls]);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -181,18 +212,7 @@ const ChatInput: FC<ChatInputProps> = ({ onSendMessage }) => {
           />
           <div className="flex items-center justify-between mt-2 sm:mt-[8px]">
             <div className="flex items-center gap-2 sm:gap-[11px] mt-2 sm:mt-[8px] ml-2 sm:ml-[8px]">
-              <button
-                type="button"
-                className="flex gap-1 text-white items-center justify-center leading-5 sm:leading-[27px] p-1 sm:p-[8px] py-1 sm:py-[5px] relative box-border rounded-[15px] bg-[#FFFFFF0D] group hover:bg-[#FFFFFF1A] transition-all duration-300 ease-in-out outline-none cursor-pointer"
-                disabled={input.trim() === ""}
-              >
-                <img
-                  className="h-4 w-4 group-hover:scale-[1.2] transition-all duration-300 ease-in-out"
-                  src={ideaIconSide}
-                  alt="idea"
-                />
-                <span className="text-xs">Công cụ</span>
-              </button>
+              <PickTool />
               <button
                 type="button"
                 className="text-white hover:text-gray-300 transition-colors cursor-pointer"

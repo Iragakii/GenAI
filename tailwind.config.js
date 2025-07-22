@@ -35,6 +35,7 @@ module.exports = {
       },
       animation: {
         slideRight: "slideRight 0.3s ease-out forwards",
+        slideRightAgent: "slideRightAgent 0.3s ease-out forwards",
         scalePulse: "scalePulse 2s infinite",
       },
       keyframes: {
@@ -42,10 +43,27 @@ module.exports = {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0)" },
         },
+        slideRightAgent: {
+          "0%": {
+            transform: "translateX(-25px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
         scalePulse: {
           "0%, 100%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.05)" },
         },
+      },
+      width: {
+        sidebar: "54px",
+        "sidebar-form": "280px",
+      },
+      spacing: {
+        "sidebar-padding": "13px",
       },
     },
   },

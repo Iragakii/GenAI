@@ -1,13 +1,14 @@
 import React, { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import NotLoginForm from "../components/NotLoginForm";
+import AgentList from "../components/AgentList";
 
 const homeIconSide = "/icon-home-side.png";
 const brandLogoMain = "/brand-logo-main.png";
 const contactIconSide = "/icon-contact-side.png";
 const aboutIconSide = "/icon-about-side.png";
 const agenticIconSide = "/icon-agentic.png";
-const assistantIconSide = "/icon-assistant.png";
+
 const setupIconSide = "/icon-setup.png";
 const SideBarChat: FC = () => {
   const [showForm, setShowForm] = useState(false);
@@ -115,22 +116,8 @@ const SideBarChat: FC = () => {
               </div>
             </div>
 
-            <div className="mb-[20px]">
-              <Link
-                to="#"
-                className="flex items-center justify-center leading-[27px] mb-1 relative box-border rounded-[5px] group bg-[#313131] hover:scale-105 transition-transform duration-300 ease-in-out pt-0 pb-0"
-              >
-                <div className="icon py-1  block text-white flex justify-center items-center">
-                  <img
-                    className="w-5  h-5 line group-hover:scale-[1.2] transition-all duration-300 ease-in-out dark:text-white"
-                    src={assistantIconSide}
-                    alt="iconHome"
-                  />
-                </div>
-              </Link>
-              <div className="text-gray-300 flex items-center justify-center h-full whitespace-nowrap text-[10px]">
-                List Agent
-              </div>
+            <div className="mb-[18px]">
+              <AgentList />
             </div>
 
             <div>

@@ -50,7 +50,61 @@ export default function ChatField() {
     }
 
     setMessages(updated);
-    localStorage.setItem("chat-messages", JSON.stringify(updated));
+
+    const saveToLocalStorage = (messages: Message[]) => {
+      try {
+        localStorage.setItem("chat-messages", JSON.stringify(messages));
+        return true;
+      } catch (error) {
+        console.warn("Storage quota exceeded, attempting cleanup...");
+
+        const storageUsed = new Blob([JSON.stringify(messages)]).size;
+        const maxStorage = 5 * 1024 * 1024;
+
+        if (storageUsed > maxStorage && messages.length > 1) {
+          const removeCount = Math.max(1, Math.floor(messages.length * 0.2));
+          const cleanedMessages = messages.slice(removeCount);
+
+          try {
+            localStorage.setItem(
+              "chat-messages",
+              JSON.stringify(cleanedMessages)
+            );
+            setMessages(cleanedMessages);
+            console.log(
+              `Removed ${removeCount} oldest messages to free storage`
+            );
+            return true;
+          } catch (nestedError) {
+            if (cleanedMessages.length > 1) {
+              return saveToLocalStorage(
+                cleanedMessages.slice(Math.floor(cleanedMessages.length * 0.2))
+              );
+            }
+          }
+        }
+
+        const messagesWithoutImages = messages.map((msg) => ({
+          ...msg,
+          imagesBase64: undefined,
+        }));
+
+        try {
+          localStorage.setItem(
+            "chat-messages",
+            JSON.stringify(messagesWithoutImages)
+          );
+          setMessages(messagesWithoutImages);
+          console.warn("Removed all images to save storage space");
+          return true;
+        } catch (finalError) {
+          console.error("Failed to save messages to storage:", finalError);
+          return false;
+        }
+      }
+    };
+
+    saveToLocalStorage(updated);
 
     if (decoded) {
       navigate("/chat", { replace: true });
